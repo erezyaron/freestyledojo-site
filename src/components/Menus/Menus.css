@@ -1,0 +1,29 @@
+/* Menus.css */
+.menus {
+    justify-content: space-between;
+    margin-top: 40px;
+    /* border: 10px solid green; */
+  }
+  
+  .menu-container {
+    display: flex;
+    border: '10px solid green';
+    justify-content: space-between; /* This will ensure the spacers work as intended */
+    align-items: center;
+    padding: 0 130px; /* Adjust padding as needed */
+  }
+
+  .menu-spacer {
+    border: '10px solid green';
+    flex: 1;
+  }
+  
+.menu-image {
+    /* Adjust width and height as needed */
+    width: 20%; 
+    height: auto;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+  }

@@ -1,7 +1,7 @@
-const GymRentals = () => {
+const GymRentals = ({style}) => {
     return (
         <>
-        <div id="gym-rentals">gym rentals</div>
+        <div id="gym-rentals" style={style}>gym rentals</div>
         </>
     )
 };
