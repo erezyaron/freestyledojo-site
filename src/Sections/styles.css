@@ -1,15 +1,25 @@
 
+#programs {
+  width: 100%;
+  bottom: 0;
+  background-color: #F1EDE1;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 #schedule {
     width: 100%;
     bottom: 0;
     background-color: #1d1d1d;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-
-  
-  }
+}
 .schedule-column {
     flex: 1;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
     width: 100%;
 }
 .schedule-gap {}
@@ -23,9 +33,11 @@
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    width: 100%;
+    width: 70%;
     flex-wrap: wrap;
     align-content: flex-start;
+    margin-right: auto;
+    margin-left:  auto;
 }
 
 .info-item .info-icon-behind {
@@ -74,3 +86,82 @@
     font-size: 20px;
   }
   
+
+.programs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.program-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: calc(25% - 20px);
+  flex-basis: calc(25%); 
+  color: white;
+  font-style: italic;
+  font-weight: 700;
+  font-family: "Titillium Web";
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+  width: 280px;
+  z-index: 2; /* Ensure text is above the lines */
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+#programs h2 {
+  color: #CE4B2C;
+  font-size: 2rem;
+  margin: 0;
+}
+#programs h3 {
+  color: black;
+  font-size: 1.75rem;
+  margin: 0;
+}
+.program-text{
+  transform: translateY(170%);
+  font-size: 1.75rem;
+transition: transform 0.3s ease-in-out;
+}
+.jiu-jitsu { background-color: #509595; }
+.kickboxing { background-color: #23425C; }
+.fitness { background-color: #E8B352; }
+.kids { background-color: #CE4B2C; }
+
+.program-item::before,
+.program-item::after {
+  content: '';
+  position: absolute;
+  bottom: auto; /* Starting position at the bottom of the item */
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  width: 50%; /* Line width as a percentage of the item's width */
+  height: 2px; /* Line thickness */
+  background-color: white;
+  transition: all 0.3s ease-out; /* Transition effect for smooth animation */
+  transform: translateX(-50%);
+}
+.program-item:hover .program-text {
+  transform: translateY(50px); /* Move text down */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.program-item:hover::before,
+.program-item:hover::after {
+  bottom: 20px; /* Move lines down */
+}
+
+/* Split line for the other sections on hover */
+.jiu-jitsu:hover:before,
+.kickboxing:hover::before,
+.fitness:hover::before,
+.kids:hover::before {
+  transform: translateX(-50%) rotate(45deg); /* Rotate line to form one side of the X */
+}
+.jiu-jitsu:hover:after,
+.kickboxing:hover::after,
+.fitness:hover::after,
+.kids:hover::after {
+  transform: translateX(-50%) rotate(-45deg); /* Rotate line to form the other side of the X */
+}
