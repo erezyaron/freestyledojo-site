@@ -2,7 +2,7 @@
 #schedule {
     width: 100%;
     bottom: 0;
-    background-color: black;
+    background-color: #1d1d1d;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 
   
@@ -28,31 +28,49 @@
     align-content: flex-start;
 }
 
+.info-item .info-icon-behind {
+  position: absolute;
+  z-index: 0; /* Place it behind the text */
+  font-size: 100px; /* Adjust size as needed */
+  font-weight: 600;
+  color: #54595F75; /* Color of the icon */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the icon */
+  opacity: 0.4; /* Adjust opacity as needed */
+}
+
 .info-item {
-      
+      position: relative;
       margin-bottom: 20px;
+      margin-top: 10px;
       width: 30%     ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Additional styling */
+    vertical-align: middle;
   }
   
-  .info-icon {
-    /* Icon styling */
-  }
   
   .info-title {
     color: #CE4B2C;
     margin: 0px;
     padding: 0px;
+    vertical-align: middle;
   }
   
   .info-text {
+    margin: 0;
     align-items: center;
     color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 20px;
+  }
+ .info-text a {
+    text-decoration: none;
+    box-shadow:  none;
+    font-size: 20px;
   }
   
