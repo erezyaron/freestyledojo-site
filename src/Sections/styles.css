@@ -1,3 +1,88 @@
+#about {
+  width: 100%;
+  background-color: #F1EDE1;
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Image takes up 1 fraction, Text takes up 2 fractions */
+  gap: 100px; /* Space between image and text */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: auto; /* Center the container */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rubik";
+  font-weight: 400;
+  width: 54%;
+  position: relative;
+  margin: 0px 50px 0px 0px;
+}
+
+.about-text h4 {
+  color: #000; /* Title color */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Titillium Web";
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-block-end: 1rem;
+  margin-block-start: .5rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #CE4B2C;
+}
+
+.about-text h3 {
+  color: #E44D26; /* Subtitle color */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Titillium Web";
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-block-end: 1rem;
+  margin-block-start: .5rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.about-item.text {
+  color: #333; /* Paragraph text color */
+  margin-bottom: 20px;
+}
+
+.about-item.button {
+  background-color: #E44D26; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+  padding: 20px;
+
+}
+.icon {
+  padding: 0px 10px 0px 0px;
+}
+.about-item.button:hover {
+  background-color: #C1351D; /* Darken button color on hover */
+}
 
 #programs {
   width: 100%;
