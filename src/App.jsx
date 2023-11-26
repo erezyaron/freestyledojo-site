@@ -4,7 +4,7 @@ import Schedule from './Sections/Schedule';
 import Programs from './Sections/Programs';
 import About from './Sections/About';
 import GymRentals from './Sections/GymRentals';
-
+import './App.css'
 
 function App() {
   return (

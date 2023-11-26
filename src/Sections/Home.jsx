@@ -1,4 +1,4 @@
-import Background from '../components/Background/Background'
+import '../components/Background/Background.css'
 import Header from '../components/Header/Header';
 import Menus from '../components/Menus/Menus'
 import Schedule from './Schedule';
@@ -10,10 +10,11 @@ import FlyInSection from '../components/FlyInSection/FlyInSection';
 const Home = () => {
     return (
         <>
-        <Background />
-        <Header />
-        <Menus />
-        <FlyInSection />
+        <div className='background'>        
+            <Header />
+            <Menus />
+            <FlyInSection />
+        </div>
         <Schedule />
         <Programs />
         <About />
