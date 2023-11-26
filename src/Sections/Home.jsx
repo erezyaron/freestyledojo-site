@@ -5,6 +5,7 @@ import Schedule from './Schedule';
 import Programs from './Programs';
 import About from './About';
 import GymRentals from './GymRentals';
+import FlyInSection from '../components/FlyInSection/FlyInSection';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Background />
         <Header />
         <Menus />
+        <FlyInSection />
         <Schedule />
         <Programs />
         <About />

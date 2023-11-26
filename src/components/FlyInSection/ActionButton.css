@@ -1,0 +1,24 @@
+
+  .action-button {
+    background-color: #CE4B2C;
+    color: white;
+    padding: 20px 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .action-button .fa-chevron-right {
+    margin-right: 18px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  
