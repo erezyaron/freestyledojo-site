@@ -1,9 +1,9 @@
 .background {
-    background-image: '/src/assets/jiu-jitsu-class-toronto-scaled.webp' ;
+    /* background-image: '/src/assets/jiu-jitsu-class-toronto-scaled.webp' ; */
     background-size: cover; /* Cover the entire area of the div */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
   height: 600px; /* Set a height for your div */
-  width: 100%; /* Set the width of your div */
+  /* width: 95%; Set the width of your div */
   z-index: -1;
 }

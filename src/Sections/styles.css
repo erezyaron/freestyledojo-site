@@ -5,12 +5,14 @@
   background-color: #F1EDE1;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   text-align: center;
-  padding: 20px;
+  padding-block: 20px;
+  padding-right: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 #schedule {
+
     width: 100%;
     bottom: 0;
     background-color: #1d1d1d;
@@ -89,7 +91,8 @@
 
 .programs-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
 
 .program-item {
@@ -104,7 +107,6 @@
   position: relative;
   overflow: hidden;
   height: 280px;
-  width: 280px;
   z-index: 2; /* Ensure text is above the lines */
   transition: transform 0.3s ease-out;
   cursor: pointer;

@@ -36,7 +36,7 @@
   .widget-wrap {
     display: flex;  
     position: relative;
-    width: 100%;
+    width: 69%;
     flex-wrap: wrap;
     align-content: flex-start;
     animation: bounceInLeft 1s ease forwards;
