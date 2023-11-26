@@ -10,7 +10,7 @@ const About = () => {
                     <img src="/src/assets/toronto-martial-arts-classes-scaled.jpg" className="about-image" />
                 </div>
                 <div className="about-text">
-                    <h3>Toronto's Martial Arts Gym</h3>
+                    <h3>Toronto&apos;s Martial Arts Gym</h3>
                     <h4>Our mission at freestyle dojo</h4>
                     <p className="about-item text">
                     At Freestyle our mission is to provide you and our community with world-class martial arts instruction. We do so in an environment that is welcoming, whether you are trying martial arts for the 1st time or already an advanced practitioner.
