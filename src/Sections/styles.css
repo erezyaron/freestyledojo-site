@@ -13,6 +13,10 @@
   max-width: 1200px; /* Maximum width of the container */
   margin: auto; /* Center the container */
 }
+.about-image {
+  display: block;
+  padding-left: 50px;
+}
 
 .about-image img {
   width: 100%;
@@ -26,9 +30,8 @@
   justify-content: center;
   font-family: "Rubik";
   font-weight: 400;
-  width: 54%;
+  width: 74%;
   position: relative;
-  margin: 0px 50px 0px 0px;
 }
 
 .about-text h4 {
