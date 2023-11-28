@@ -7,6 +7,7 @@
     gap: 20px; /* Space between the review cards */
     overflow: hidden; /* Prevents horizontal scrollbar */
     position: relative;
+
   }
   
   .review-header {
@@ -131,4 +132,13 @@
   
   .review-arrow.next {
     right: -30px; /* Adjust as necessary */
+  }
+  .review-controls {
+  }
+  .overall-rating {
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 0.9em; /* Adjust font size as needed */
+    /* Add any other styles to match your design */
   }

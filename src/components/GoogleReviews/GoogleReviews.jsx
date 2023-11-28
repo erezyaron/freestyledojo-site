@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReviewItem from './ReviewItem';
 import reviewsData from './reviews.json'; // Path to your JSON file
 import './GoogleReviews.css'
+import { faDisplay } from '@fortawesome/free-solid-svg-icons';
 
 const GoogleReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -28,6 +29,7 @@ const GoogleReviews = () => {
   };
 
   return (
+    <>
     <div className="reviews-section">
       <div className="review-arrow prev" onClick={handlePrevClick}>&#10094;</div>
       {/* Display only the current review or a subset based on currentReviewIndex */}
@@ -36,6 +38,12 @@ const GoogleReviews = () => {
       ))}      
       <div className="review-arrow next" onClick={handleNextClick}>&#10095;</div>
     </div>
+    <div className="review-controls">
+    <div className="overall-rating">
+      Google rating score: 5.0 of 5, based on 59 reviews
+    </div>
+  </div>
+  </>
   );
 };
 
