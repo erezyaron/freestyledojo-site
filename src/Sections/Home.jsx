@@ -6,6 +6,7 @@ import Programs from './Programs';
 import About from './About';
 import GymRentals from './GymRentals';
 import FlyInSection from '../components/FlyInSection/FlyInSection';
+import NoGiSection from '../components/NoGiSection/NoGiSection';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Schedule />
         <Programs />
         <About />
+        <NoGiSection />
         <GymRentals />
         </>
     )

@@ -1,0 +1,112 @@
+.no-gi-section {
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1200px; 
+  color: #fff;
+}
+.header-content {
+  text-align: center;
+}
+.text-content {
+  flex: 1;
+  padding-right: 20px; /* Adjust as needed */
+  text-align: left;
+}
+.header-content h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+.header-content h3 {
+  margin: 0;
+  color: #fff; /* Or as per your color scheme */
+  font-size: 25px;
+  font-weight: 500;
+}
+.text-content p {
+  color: #fff;
+  margin-top: 50px;
+  
+}
+@keyframes drop-in-drop-out {
+  0%, 100% {
+    opacity: 0;
+  }
+  15%, 90% { /* Adjust these percentages to control the duration of visibility */
+  
+    opacity: 1;
+  }
+ 
+}
+
+.header-content .highlight {
+  color: #e44d26; /* Highlight color */
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  animation: drop-in-drop-out 2s ease-in-out both infinite;
+}
+.image-content {
+  flex: 1;
+  position: relative; /* For absolute positioning of the play button */
+}
+.image-content img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .no-gi-section {
+    flex-direction: column;
+  }
+
+  .image-content,
+  .text-content {
+    flex: none;
+    width: 100%;
+  }
+
+  .text-content {
+    padding-right: 0;
+  }
+}
+.video-content {
+  position: relative;
+  width: 45%;
+  height: 100%; /* You might need to adjust this depending on your layout */
+  flex: 1;
+}
+.video-content iframe.no-gi-video {
+  /* Additional iframe styles as needed */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+.widget-container {
+  text-align: center; /* Center align the divider */
+}
+.divider {
+  display: flex;
+  justify-content: center;
+}
+.divider-separator {
+  width: 45%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 8px; /* Adjust as needed for visual spacing */
+  
+}
+.main-content {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: start; 
+  margin-top: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 65%;
+}
