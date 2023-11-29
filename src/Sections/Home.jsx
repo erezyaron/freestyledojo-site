@@ -8,6 +8,8 @@ import GymRentals from './GymRentals';
 import FlyInSection from '../components/FlyInSection/FlyInSection';
 import NoGiSection from '../components/NoGiSection/NoGiSection';
 import GoogleReviews from '../components/GoogleReviews/GoogleReviews';
+import TrialClassForm from '../components/FreeTrial/FreeTrial';
+
 
 const Home = () => {
     return (
@@ -22,6 +24,7 @@ const Home = () => {
         <About />
         <NoGiSection />
         <GoogleReviews />
+        <TrialClassForm />
         <GymRentals />
         </>
     )
