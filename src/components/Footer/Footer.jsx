@@ -49,7 +49,7 @@ const Footer = () => {
         <h3>LINKS</h3>
         <ul  className='footer-list'>
         <li className='footer-list-item'><a className='link' href="/schedule">Class Schedule</a></li>
-        <li className='footer-list-item'><a className='link' href="/about-freestyle-dojo">About Us</a></li>
+        <li className='footer-list-item'><a className='link' href="/about-our-coaches">About Us</a></li>
         <li className='footer-list-item'><a className='link' href="/gym-rentals">Gym Rentals</a></li>
         <li className='footer-list-item'><a className='link' href="/programs">Progarms</a></li>
         <li className='footer-list-item'><a className='link' href="/book-a-class">Book a class</a></li>

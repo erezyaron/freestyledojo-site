@@ -21,7 +21,7 @@ const Menus = () => {
             </DropdownMenu>
             </div>
             <div className="menu-item-wrapper">
-            <DropdownMenu label={"About"} onClick="/about-freestyle-dojo">
+            <DropdownMenu label={"About"} onClick="/about-our-coaches">
             <MenuItem to="/events">Events</MenuItem>
             </DropdownMenu>
             </div>
