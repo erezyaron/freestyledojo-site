@@ -10,6 +10,7 @@ import NoGiSection from '../components/NoGiSection/NoGiSection';
 import GoogleReviews from '../components/GoogleReviews/GoogleReviews';
 import TrialClassForm from '../components/FreeTrial/FreeTrial';
 import TwoPartSection from '../components/TwoPartSection/TwoPartSection';
+import Footer from '../components/Footer/Footer';
 
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
         title="LOOKING FOR A SPACE TO TRAIN YOUR CLIENTS?" 
         content="We have the most affordable rates on our mat spaces and gym rentals in Toronto. We offer a flat fee, plus competitive rates for other industries looking to rent a location. Contact us for a quote and more information on how to book your time." 
         buttonText="Get a Quote" />
-        <GymRentals />
+        <Footer />
         </>
     )
 };
