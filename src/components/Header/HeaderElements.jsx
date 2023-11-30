@@ -1,82 +1,80 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link as LinkRouter } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export const Nav = ({ children }) => {
+  Nav.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return <nav className="navbar">{children}</nav>;
+};
+
+export const NavbarContainer = ({ children }) => {
+  NavbarContainer.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return <div className="navbar-container">{children}</div>;
+};
+
+export const NavLogo = ({ children, ...rest }) => {
+  NavLogo.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return <LinkRouter {...rest}>{children}</LinkRouter>;
+};
+
+export const NavMenu = ({ children }) => {
+  NavMenu.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return <div className="nav-menu">{children}</div>;
+};
+export const NavItem = ({ children }) => {
+  NavItem.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return <div className="nav-item">{children}</div>;
+};
+
+export const NavLinks = ({ children, to, icon, ...rest }) => {
+  NavLinks.propTypes = {
+    children: PropTypes.node,
+    to: PropTypes.string.isRequired,
+    icon: PropTypes.object,
+  };
   return (
-    <nav className="navbar">
+    <a className="nav-links"
+      href={to}
+      {...rest}
+    >
+      {icon && <FontAwesomeIcon icon={icon} />}
       {children}
-    </nav>
+    </a>
   );
 };
-    
-export const NavbarContainer = ({ children }) => (
-  <div>
-    {children}
-  </div>
-);
 
-export const NavLogo = ({ children, ...rest }) => (
-  <LinkRouter
-    {...rest}
-  >
-    {children}
-  </LinkRouter>
-);
-
-export const NavMenu = ({ children }) => (
-    <div style={{
-        display: 'flex',
-        justifyContent: 'space-between', // This will spread the items across the top
-        alignItems: 'center', // This will vertically center the items
-        padding: '0 24px', // This adds a small gap on the left and right
-        height: '44px', // Use full height of the Nav
-      }}>
-        {children}
-      </div>
-);
-
-export const NavItem = ({ children }) => (
-    <div style={{
-        display: 'flex',
-        alignItems: 'center', // This will vertically center the items within each NavItem
-        height: '100%'
-      }}>
-        {children}
-      </div>
-);
-
-export const NavLinks = ({ children, to, icon, ...rest }) => (
-    <a href={to} style={{
-        color: 'white', // Set the text color
-        textDecoration: 'none', // Remove underline from links
-        padding: '0 8px', // Add some padding around the text
-        fontFamily: 'Titillium Web',
-        fontWeight: 700,
-        textTransform: 'uppercase',
-        alignItems: 'center',
-        display:'flex',
-        height: '100%',
-      }} {...rest}>
-        {icon && <FontAwesomeIcon icon={icon} />}
-        {children}
-      </a>
-);
-
-export const NavBtn = ({ children }) => (
+export const NavBtn = ({ children }) => {
+  NavBtn.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return (
   <nav className="flex items-center md:hidden">{children}</nav>
 );
-
-export const NavBtnLink = ({ children, ...rest }) => (
+  };
+export const NavBtnLink = ({ children, ...rest }) => {
+  NavBtnLink.propTypes = {
+    children: PropTypes.node.isRequired,
+  };
+  return (
   <LinkRouter {...rest} className="btn-green">
     {children}
   </LinkRouter>
 );
+  };
 
 export const NavSpacer = () => {
-    return (
-      <div style={{ flex: 1 }}></div> // This will take up all available space
-    );
-  };
+  return (
+    <div className="nav-spacer"></div> // This will take up all available space
+  );
+};
