@@ -28,7 +28,7 @@ const Home = () => {
         <GoogleReviews />
         <TrialClassForm />
         <TwoPartSection 
-        imageUrl="/src\assets\toronto-martial-arts-gym-rental-scaled.jpg" 
+        imageUrl="/assets/toronto-martial-arts-gym-rental-scaled.jpg" 
         imageAlt="Training Space" 
         title="LOOKING FOR A SPACE TO TRAIN YOUR CLIENTS?" 
         content="We have the most affordable rates on our mat spaces and gym rentals in Toronto. We offer a flat fee, plus competitive rates for other industries looking to rent a location. Contact us for a quote and more information on how to book your time." 

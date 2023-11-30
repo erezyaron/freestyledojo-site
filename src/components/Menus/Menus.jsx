@@ -6,7 +6,7 @@ const Menus = () => {
     <Menu>
         <MenuContainer>
             
-            <MenuImage src="src/assets/FS-LOGO.png" alt="Freestyle Dojo Logo" />
+            <MenuImage src="/assets/FS-LOGO.png" alt="Freestyle Dojo Logo" />
             <MenuSpacer />
             <div className="menu-item-wrapper">
             <DropdownMenu label={"Schedule"}>
