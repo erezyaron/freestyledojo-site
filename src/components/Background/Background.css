@@ -3,7 +3,7 @@
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Do not repeat the image */
   height: 600px; /* Set a height for your div */
-
+  padding-top: 44px;
 }
 
 .background-overlay {

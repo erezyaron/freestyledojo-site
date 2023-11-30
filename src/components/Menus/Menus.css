@@ -40,6 +40,8 @@
     cursor: pointer;
     padding: 13px 20px;
     line-height: 20px;
+    display: flex;
+    
   }
   .menu-button:not(:last-child) {
     border-right: none;
@@ -48,6 +50,7 @@
     border: 2px solid white;
   }
  .menu-item-wrapper-no-border{
+  display: block;
     content: '';
     transform: translateY(-50%);
  } 
