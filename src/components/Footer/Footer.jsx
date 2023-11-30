@@ -41,18 +41,18 @@ const Footer = () => {
         <a href="tel:647-245-8829" className='link'>
         <FontAwesomeIcon icon={faPhoneFlip} />
         &nbsp;647-245-8829</a>
-        <a className='button' href="">FREE TRIAL CLASS</a>
+        <a className='button' href="/contact-free-trial-class">FREE TRIAL CLASS</a>
       </div>
         </div>
         <div className='footer-right'>
         <div className="footer-links">
         <h3>LINKS</h3>
-        <ul>
-        <li><a className='link' href="">Class Schedule</a></li>
-        <li><a className='link' href="">About Us</a></li>
-        <li><a className='link' href="">Gym Rentals</a></li>
-        <li><a className='link' href="">Progarms</a></li>
-        <li><a className='link' href="">Book a class</a></li>
+        <ul  className='footer-list'>
+        <li className='footer-list-item'><a className='link' href="/schedule">Class Schedule</a></li>
+        <li className='footer-list-item'><a className='link' href="/about-freestyle-dojo">About Us</a></li>
+        <li className='footer-list-item'><a className='link' href="/gym-rentals">Gym Rentals</a></li>
+        <li className='footer-list-item'><a className='link' href="/programs">Progarms</a></li>
+        <li className='footer-list-item'><a className='link' href="/book-a-class">Book a class</a></li>
         </ul>
       </div>
         </div>

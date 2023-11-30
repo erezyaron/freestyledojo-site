@@ -15,7 +15,9 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  
+  .action-button a{
+    text-decoration: none;
+  }
   .action-button .fa-chevron-right {
     margin-right: 18px;
     height: 30px;
