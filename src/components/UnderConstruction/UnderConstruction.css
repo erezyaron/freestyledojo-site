@@ -1,10 +1,13 @@
 .construction {
     color: orange;
     background-color: blue;
-    justify-content: center;
     width: 100%;
     text-align: center;
     z-index: 10;
+    top: 0; left: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
   }
   .background {
     background-size: cover; /* Cover the entire area of the div */
