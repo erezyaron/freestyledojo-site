@@ -1,0 +1,30 @@
+.construction {
+    color: orange;
+    background-color: blue;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+  .background {
+    background-size: cover; /* Cover the entire area of the div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  z-index: 2;
+}
+a {
+    color: white;
+    cursor: pointer;
+}
+.background-overlay {
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.4;
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('/assets/jiu-jitsu-class-toronto-scaled.webp') ; 
+  z-index: -1;
+}
