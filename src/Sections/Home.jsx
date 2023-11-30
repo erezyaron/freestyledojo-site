@@ -4,7 +4,6 @@ import Menus from '../components/Menus/Menus'
 import Schedule from './Schedule';
 import Programs from './Programs';
 import About from './About';
-import GymRentals from './GymRentals';
 import FlyInSection from '../components/FlyInSection/FlyInSection';
 import NoGiSection from '../components/NoGiSection/NoGiSection';
 import GoogleReviews from '../components/GoogleReviews/GoogleReviews';
@@ -16,7 +15,8 @@ import Footer from '../components/Footer/Footer';
 const Home = () => {
     return (
         <>
-        <div className='background'>        
+        <div className='background'>
+            <div className='background-overlay'></div>
             <Header />
             <Menus />
             <FlyInSection />
