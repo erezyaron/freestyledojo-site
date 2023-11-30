@@ -17,7 +17,13 @@
       /* Desktop styles */
     }
   }
-  
+  .construction {
+    color: orange;
+    background-color: blue;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
 
 .nav {
     background-color: #1d1d1d;

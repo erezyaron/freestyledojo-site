@@ -18,7 +18,7 @@ const Home = () => {
         <div className='background'>
             <div className='background-overlay'></div>
             <Header />
-            <Menus />
+            <Menus /> 
             <FlyInSection />
         </div>
         <Schedule />

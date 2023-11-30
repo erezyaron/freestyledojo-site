@@ -41,13 +41,14 @@
     padding: 13px 20px;
     line-height: 20px;
     display: flex;
-    
+    white-space: nowrap;
   }
   .menu-button:not(:last-child) {
     border-right: none;
   }
   .menu-button.white-border {
     border: 2px solid white;
+    min-width: 190px;
   }
  .menu-item-wrapper-no-border{
   display: block;

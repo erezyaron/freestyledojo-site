@@ -12,7 +12,7 @@ import { faGoogle, faInstagram, faFacebookF, faSquareYoutube } from '@fortawesom
 
 const Header = () => { 
     return (
-        <Nav>
+        <><Nav>
             <NavbarContainer>
                 <NavSpacer />
             <NavMenu>
@@ -21,7 +21,7 @@ const Header = () => {
             </NavItem>
             <NavItem>
                 <NavLinks icon={faPhoneFlip} to="tel:647-245-8829">&nbsp;647-245-8829</NavLinks>
-            </NavItem>
+            </NavItem> 
             <NavSpacer />
             <NavItem>
               <NavLinks icon={faFacebookF} to="https://www.facebook.com/profile.php?id=100076292797233"  />
@@ -41,6 +41,10 @@ const Header = () => {
           </NavMenu>
             </NavbarContainer>
         </Nav>
+        <div className='construction'>
+          <span>Under Construction: We are updating our webiste<br/>Please email info@freestyledojo.ca for assistance.</span>
+        </div>
+        </>
     )
 }
 
