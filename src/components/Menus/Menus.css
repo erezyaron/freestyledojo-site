@@ -1,86 +1,93 @@
-/* Menus.css */
 .menus {
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-  
-  .menu-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 0 130px; 
-  }
+  display: inline;
+  justify-content: space-between;
+  margin-top: 40px;
+}
 
-  .menu-spacer {
-    flex: 1;
-  }
-  
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 130px;
+}
+
+.menu-spacer {
+  flex: 1;
+}
+
 .menu-image {
-    width: 20%; 
-    height: auto;
-  }
-  .logo {
-    width: 200px;
-    height: auto;
-  }
+  width: 20%;
+  height: auto;
+}
+.logo {
+  width: 200px;
+  height: auto;
+}
 
-  .menu-item-wrapper:not(:last-child) {
-    border-right: 2px solid orange;
-    transform: translateY(-50%);
-  }
-  
-  .menu-button {
-    background: none;
-    border: none;
-    color: white; 
-    font-size: 18px; 
-    font-family: 'Titillium Web';
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 13px 20px;
-    line-height: 20px;
-    display: flex;
-    white-space: nowrap;
-  }
-  .menu-button:not(:last-child) {
-    border-right: none;
-  }
-  .menu-button.white-border {
-    border: 2px solid white;
-    min-width: 190px;
-  }
- .menu-item-wrapper-no-border{
+.menu-item-wrapper:not(:last-child) {
+  border-right: 2px solid #CE4B2C;
+  transform: translateY(-50%);
+}
+
+.menu-button {
+  justify-content: center;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Titillium Web";
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 13px 20px;
+  line-height: 20px;
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.menu-button:not(:last-child) {
+  border-right: none;
+}
+.menu-button.white-border {
+  border: 2px solid white;
+  min-width: 190px;
+}
+.menu-item-wrapper-no-border {
   display: block;
-    content: '';
-    transform: translateY(-50%);
- } 
-  /* Specific style for the button with the white border to exclude the vertical line */
-  .menu-button.white-border:before {
-    content: none;
-  }
-  
-  .dropdown-menu {
-    position: relative;
-    z-index: 2;
-  }
-  .dropdown-content {
-    position: absolute;
-    top: 100%; /* Positioned right below the button */
-    left: 0px;
-    background-color: black; /* Black background */
-    width: 100%; /* Match the width of the parent */
-    border-top: 2px solid orange;
-    z-index: 1;
-  }
-  .menu-item {
-    /* Styles for each item in the dropdown */
-    color: white; /* For contrast against the black background */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Vertical padding */
-    width: 100%; /* Match the width of the parent */
-    box-sizing: border-box; /* Include padding and border in the width */
-  }
-  .menu-item:not(:last-child) {
-    border-bottom: 1px solid orange;
-  }
+  content: "";
+  transform: translateY(-50%);
+}
+/* Specific style for the button with the white border to exclude the vertical line */
+.menu-button.white-border:before {
+  content: none;
+}
+
+.dropdown-menu {
+  position: relative;
+  z-index: 2;
+}
+.dropdown-content {
+  position: absolute;
+  top: 100%; /* Positioned right below the button */
+  left: 0px;
+  background-color: black; /* Black background */
+  width: 100%; /* Match the width of the parent */
+  border-top: 2px solid #CE4B2C;
+  z-index: 1;
+}
+.menu-item {
+  color: white; 
+  text-align: center;
+  padding: 10px 0;
+  width: 100%; 
+  box-sizing: border-box; 
+  text-decoration: none;
+}
+.menu-item a {
+  text-decoration: none;
+}
+.menu-item:not(:last-child) {
+  border-bottom: 1px solid orange;
+  text-decoration: none;
+}

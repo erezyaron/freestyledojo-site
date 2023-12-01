@@ -1,6 +1,6 @@
 #about {
   width: 100%;
-  background-color: #F1EDE1;
+  background-color: #f1ede1;
   padding: 50px 0px 50px 0px;
   display: flex;
   align-items: center;
@@ -42,23 +42,23 @@
   font-weight: 700;
   font-size: 1.5rem;
   margin-block-end: 1rem;
-  margin-block-start: .5rem;
+  margin-block-start: 0.5rem;
   line-height: 1;
   margin: 0;
   padding: 0;
   padding-bottom: 5px;
-  border-bottom: 3px solid #CE4B2C;
+  border-bottom: 3px solid #ce4b2c;
 }
 
 .about-text h3 {
-  color: #E44D26; /* Subtitle color */
+  color: #e44d26; /* Subtitle color */
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: "Titillium Web";
   font-weight: 700;
   font-size: 1.75rem;
   margin-block-end: 1rem;
-  margin-block-start: .5rem;
+  margin-block-start: 0.5rem;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -70,7 +70,7 @@
 }
 
 .about-item.button {
-  background-color: #E44D26; /* Button background color */
+  background-color: #e44d26; /* Button background color */
   color: #fff; /* Button text color */
   padding: 10px 20px;
   text-align: center;
@@ -78,19 +78,18 @@
   border: none;
   transition: background-color 0.3s;
   padding: 20px;
-
 }
 .icon {
   padding: 0px 10px 0px 0px;
 }
 .about-item.button:hover {
-  background-color: #C1351D; /* Darken button color on hover */
+  background-color: #c1351d; /* Darken button color on hover */
 }
 
 #programs {
   width: 100%;
   bottom: 0;
-  background-color: #F1EDE1;
+  background-color: #f1ede1;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   text-align: center;
   padding-block: 20px;
@@ -100,34 +99,40 @@
 }
 
 #schedule {
-
-    width: 100%;
-    bottom: 0;
-    background-color: #1d1d1d;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  width: 100%;
+  bottom: 0;
+  background-color: #1d1d1d;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 .schedule-column {
-    flex: 1;
-    justify-content: space-between; 
-    align-items: center;
-    width: 100%;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-.schedule-gap {}
-.schedule-widget-wrap {}
-.schedule-widget {}
-.schedule-widget-container {}
-.schedule-icon-wrapper {}
-.schedule-icon {}
-.schedule-widget-heading {}
+.schedule-gap {
+}
+.schedule-widget-wrap {
+}
+.schedule-widget {
+}
+.schedule-widget-container {
+}
+.schedule-icon-wrapper {
+}
+.schedule-icon {
+}
+.schedule-widget-heading {
+}
 .info-section {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    width: 70%;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin-right: auto;
-    margin-left:  auto;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 70%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .info-item .info-icon-behind {
@@ -135,7 +140,7 @@
   z-index: 0; /* Place it behind the text */
   font-size: 100px; /* Adjust size as needed */
   font-weight: 600;
-  color: #54595F75; /* Color of the icon */
+  color: #54595f75; /* Color of the icon */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the icon */
@@ -143,39 +148,37 @@
 }
 
 .info-item {
-      position: relative;
-      margin-bottom: 20px;
-      margin-top: 10px;
-      width: 30%     ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: middle;
-  }
-  
-  
-  .info-title {
-    color: #CE4B2C;
-    margin: 0px;
-    padding: 0px;
-    vertical-align: middle;
-  }
-  
-  .info-text {
-    margin: 0;
-    align-items: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 20px;
-  }
- .info-text a {
-    text-decoration: none;
-    box-shadow:  none;
-    font-size: 20px;
-  }
-  
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.info-title {
+  color: #ce4b2c;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: middle;
+}
+
+.info-text {
+  margin: 0;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+}
+.info-text a {
+  text-decoration: none;
+  box-shadow: none;
+  font-size: 20px;
+}
 
 .programs-container {
   display: flex;
@@ -186,8 +189,8 @@
 .program-item {
   display: flex;
   flex-direction: column;
-  justify-content: calc(25% - 20px);
-  flex-basis: calc(25%); 
+  justify-content: space-between ;/*calc(25% - 20px);*/
+  flex-basis: calc(25%);
   color: white;
   font-style: italic;
   font-weight: 700;
@@ -200,7 +203,7 @@
   cursor: pointer;
 }
 #programs h2 {
-  color: #CE4B2C;
+  color: #ce4b2c;
   font-size: 2rem;
   margin: 0;
 }
@@ -210,19 +213,27 @@
   margin: 0;
 }
 
-.program-text{
+.program-text {
   transform: translateY(171%);
   font-size: 1.75rem;
-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
-.jiu-jitsu { background-color: #509595; }
-.kickboxing { background-color: #23425C; }
-.fitness { background-color: #E8B352; }
-.kids { background-color: #CE4B2C; }
+.jiu-jitsu {
+  background-color: #509595;
+}
+.kickboxing {
+  background-color: #23425c;
+}
+.fitness {
+  background-color: #e8b352;
+}
+.kids {
+  background-color: #ce4b2c;
+}
 
 .program-item::before,
 .program-item::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: auto; /* Starting position at the bottom of the item */
   top: 50%;
@@ -232,6 +243,11 @@ transition: transform 0.3s ease-in-out;
   background-color: white;
   transition: all 0.3s ease-out; /* Transition effect for smooth animation */
   transform: translateX(-50%);
+}
+.program-item-link {
+  display: block;
+  width: 100%;
+  text-decoration: none; 
 }
 .program-item:hover .program-text {
   transform: translateY(50px); /* Move text down */

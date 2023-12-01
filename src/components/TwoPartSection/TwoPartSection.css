@@ -1,88 +1,157 @@
 .section {
-    display: block;
-    position: relative;
-    padding:50px 0px 50px 0px;
-    background-color: #F1EDE1;
+  display: block;
+  position: relative;
+  /* padding:50px 0px 50px 0px; */
+  background-color: #f1ede1;
 }
 .two-part-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    gap: 20px; /* Adjust the space between the columns */
-    color: white;
-    max-width: 1140px;
-    margin-right: auto;
-    margin-left:  auto;
-    position: relative;
-  }
-  
-  .left-container {
-    flex: 1;
-    width: 57.105%;
-    position: relative;
-    min-height: 1px;
-    margin: 30px;
-  }
-  .inner-container {
-    align-content: center;
-    align-items: center;
-    padding: 25px;
-    display: flex;
-    position: relative;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  
-  .right-container {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .left-container h2 {
-    text-transform: uppercase;
-    color: #ce4b2c;
-    font-family: "Titillium Web";
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1;
-  }
-  
-  .left-container p {
-    text-align: center;
-    margin-block-end: 0px;
-    margin-bottom: 20px;
-    color: #1d1d1d;
-    font-family: "Rubik";
-    font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 50px; */
+  gap: 20px; /* Adjust the space between the columns */
+  color: white;
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
 
-  }
-  .inner-container {
-    display: block;
-    width: 100%;
-  }
-  .inner-button {
-    position: relative;
-    display: flex;
-    justify-content: center;
+.left-container {
+  flex: 1;
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  margin: 30px;
+}
+.inner-container {
+  align-content: center;
+  align-items: center;
+  padding: 25px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
-  }
-  button{
-    background-color: #ce4b2c;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: none;
-    text-decoration: none;
-    color: white;
-  }
-  .inner-button-container {
-    display: block;
-    position: relative;
-    width: 100%;
-  }
-  
-  .right-container img {
-    width: 100%;
-    height: auto;
-  }
-  
+.right-container {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  min-height: 1px;
+  margin: 30px;
+}
+
+.left-container h3,
+.right-container h3 {
+  text-transform: uppercase;
+  color: #ce4b2c;
+  font-family: "Titillium Web";
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 2rem;
+  margin: 0;
+}
+.left-container h4,
+.right-container h4 {
+  color: black;
+  font-size: 1.75rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+.about-item.text {
+  color: #333; /* Paragraph text color */
+  margin-bottom: 20px;
+}
+.left-container p,
+.right-container p {
+  text-align: left;
+  margin-block-end: 0px;
+  margin-bottom: 20px;
+  color: #1d1d1d;
+  font-family: "Rubik";
+  font-weight: 400;
+}
+.inner-container {
+  display: block;
+  width: 100%;
+}
+.inner-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: #ce4b2c;
+  border-radius: 10px;
+  width: 45%;
+  box-shadow: none;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+.about-item.button {
+  background-color: #e44d26; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+  padding: 20px;
+  text-decoration: none;
+}
+.icon {
+  padding: 0px 10px 0px 0px;
+}
+.about-item.button:hover {
+  background-color: #c1351d; /* Darken button color on hover */
+}
+
+.inner-button-container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.right-container img,
+.left-container img {
+  width: 75%;
+  height: auto;
+}
+.left-container img {
+  padding-left: 60px;
+}
+.right-container img {
+  padding-right: 60px;
+}
+.trial-list-item {
+  margin-left: 20px;
+  color: #509595;
+  display: flex;
+  padding-bottom: calc(5px / 2);
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+  position: relative;
+  vertical-align: baseline;
+}
+.list-icon {
+  display: flex;
+  position: relative;
+  top: 0px initial;
+  width: 1.25em;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+}
+.list-text {
+  display: flex;
+  align-self: center;
+  padding-left: 5px;
+  color: #54595f;
+  font-weight: 400;
+  font-family: "Rubik";
+}

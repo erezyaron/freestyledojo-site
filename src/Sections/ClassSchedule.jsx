@@ -8,7 +8,7 @@ import Footer from "../components/Footer/Footer";
 import Top from "../components/Top/Top";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-const Home = () => {
+const ClassSchedule = () => {
   const location = useLocation();
   useEffect(() => {
     if (location.pathname === '/programs') {
@@ -63,4 +63,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ClassSchedule;
