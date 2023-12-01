@@ -272,3 +272,6 @@
 .kids:hover::after {
   transform: translateX(-50%) rotate(-45deg); /* Rotate line to form the other side of the X */
 }
+.black-div {
+  background-color: #000;
+}

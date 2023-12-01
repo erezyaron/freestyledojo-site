@@ -44,8 +44,10 @@ const Home = () => {
         buttonLink="/contact-free-trial-class"
         reversed={true}
       />
+      <div className="black-div">
       <NoGiSection />
       <GoogleReviews />
+      </div>
       <TrialClassForm title="BOOK A FREE TRIAL CLASS" 
       content="Try out any of our classes for free and see if Freestyle Dojo is the right fit for you!\nOur coaches are happy to guide you through your first steps into the world of martial arts to ensure you are comfortable, confident and ready to learn!"
       hideBullets={false}
