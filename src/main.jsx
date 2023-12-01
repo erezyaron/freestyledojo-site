@@ -19,7 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<UnderConstruction />} />
         <Route path="/programs" element={<Home />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/toronto-jiu-jitsu-classes" element={<JiuJitsuClasses />} />
