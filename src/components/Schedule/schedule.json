@@ -1,0 +1,282 @@
+{
+  "Monday": [
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "Morning Crew",
+      "startTime": "7:00 AM",
+      "endTime": "8:30 AM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    },
+    {
+      "title": "Conditioning",
+      "subtitle": "Strength Training",
+      "startTime": "12:00 PM",
+      "endTime": "12:45 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Strength & Conditioning", "Mike Romano"],
+      "description": "A mixture of basic strength training principles and callisthenics performed at a specific work/rest ratio to increase your cardiovascular endurance, power production, and muscle development.\nDesigned for all levels of fitness as a main source of exercise or as a supplement to your current training program."
+    },
+    {
+      "title": "Kids Classes",
+      "subtitle": "4-6 Years",
+      "startTime": "4:00 PM",
+      "endTime": "4:45 PM",
+      "instructor": "Anna Mifsud-Sweeney ",
+      "tags": ["Kids", "Anna Mifsud-Sweeney "],
+      "description": ""
+    },
+    {
+      "title": "Kids Classes",
+      "subtitle": "7-11 Years",
+      "startTime": "4:45 PM",
+      "endTime": "5:45 PM",
+      "instructor": "Anna Mifsud-Sweeney ",
+      "tags": ["Kids","Anna Mifsud-Sweeney "],
+      "description": ""
+    },
+    {
+      "title": "Beginner Jiu Jitsu",
+      "subtitle": "Advanced Basics",
+      "startTime": "5:45 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "Beginners"],
+      "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
+    },
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "All Levels",
+      "startTime": "5:45 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Jiu Jitsu", "Mike Romano", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    },
+    {
+      "title": "MMA",
+      "subtitle": "All Levels",
+      "startTime": "7:00 PM",
+      "endTime": "8:30 PM",
+      "instructor": "Mike Romano",
+      "tags": ["MMA", "Mike Romano", "All Levels"],
+      "description": "Our MMA classes are the perfect mix of striking and grappling. With a heavy emphasis on the basics and strategy, this class is ideal for both beginner and advanced students."
+    }
+  ],
+  "Tuesday": [
+    {
+      "title": "Open Mat Rolls",
+      "subtitle": "10-Rounds",
+      "startTime": "7:00 AM",
+      "endTime": "8:30 AM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "All Levels"],
+      "description": "Open mat for rolling. Sparring for 10-rounds, not supervised by an instructor."
+    },
+    {
+      "title": "Beginner Jiu Jitsu",
+      "subtitle": "Advanced Basics",
+      "startTime": "6:00 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "Beginners"],
+      "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
+    },
+    {
+      "title": "Women's Jiu Jitsu",
+      "subtitle": "Women exclusive class",
+      "startTime": "7:00 PM",
+      "endTime": "8:00 PM",
+      "instructor": "Danielle Ariss",
+      "tags": ["Jiu Jitsu", "Danielle Ariss", "All Levels"],
+      "description": "A class for all practitioners, all levels are welcome. Consisting of drills, live drills, and sparring."
+    },
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "All Levels",
+      "startTime": "7:30 PM",
+      "endTime": "9:00 PM",
+      "instructor": "Anthony Herbert",
+      "tags": ["Jiu Jitsu", "Anthony Herbert", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    }
+  ],
+  "Wednesday": [
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "Morning Crew",
+      "startTime": "7:00 AM",
+      "endTime": "8:30 AM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    },
+    {
+      "title": "Conditioning",
+      "subtitle": "Strength Training",
+      "startTime": "12:00 PM",
+      "endTime": "12:45 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Strength & Conditioning", "Mike Romano"],
+      "description": "A mixture of basic strength training principles and callisthenics performed at a specific work/rest ratio to increase your cardiovascular endurance, power production, and muscle development.\nDesigned for all levels of fitness as a main source of exercise or as a supplement to your current training program."
+    },
+    {
+      "title": "Kids Classes",
+      "subtitle": "4-6 Years",
+      "startTime": "4:00 PM",
+      "endTime": "4:45 PM",
+      "instructor": "Anna Mifsud-Sweeney ",
+      "tags": ["Kids","Anna Mifsud-Sweeney "],
+      "description": ""
+    },
+    {
+      "title": "Kids Classes",
+      "subtitle": "7-11 Years",
+      "startTime": "4:45 PM",
+      "endTime": "5:45 PM",
+      "instructor": "Anna Mifsud-Sweeney ",
+      "tags": ["Kids","Anna Mifsud-Sweeney "],
+      "description": ""
+    },
+    {
+      "title": "Beginner Jiu Jitsu",
+      "subtitle": "Advanced Basics",
+      "startTime": "5:45 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "Beginners"],
+      "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
+    },
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "All Levels",
+      "startTime": "5:45 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Jiu Jitsu", "Mike Romano", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    },
+    {
+      "title": "MMA",
+      "subtitle": "All Levels",
+      "startTime": "7:00 PM",
+      "endTime": "8:30 PM",
+      "instructor": "Mike Romano",
+      "tags": ["MMA", "Mike Romano", "All Levels"],
+      "description": "Our MMA classes are the perfect mix of striking and grappling. With a heavy emphasis on the basics and strategy, this class is ideal for both beginner and advanced students."
+    }
+  ],
+  "Thursday": [
+    {
+      "title": "Freestyle Session",
+      "subtitle": "Any Questions?",
+      "startTime": "7:00 AM",
+      "endTime": "8:30 AM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "All Levels"],
+      "description": "Freestyle Session let you work on what you want. Ask questions, drill, situationals, improve your game in small and individualized fashion."
+    },
+    {
+      "title": "Beginner Jiu Jitsu",
+      "subtitle": "Advanced Basics",
+      "startTime": "6:00 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "Beginners"],
+      "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
+    },
+    {
+      "title": "Freestyle Session",
+      "subtitle": "Open Mat Rolling",
+      "startTime": "7:30 PM",
+      "endTime": "9:30 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Jiu Jitsu", "Mike Romano", "All Levels"],
+      "description": "Open mat for rolling. Sparring for 10-rounds, not supervised by an instructor."
+    }
+  ],
+  "Friday": [
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "Morning Crew",
+      "startTime": "7:00 AM",
+      "endTime": "8:30 AM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    },
+    {
+      "title": "Conditioning",
+      "subtitle": "Strength Training",
+      "startTime": "12:00 PM",
+      "endTime": "12:45 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Strength & Conditioning", "Mike Romano"],
+      "description": "A mixture of basic strength training principles and callisthenics performed at a specific work/rest ratio to increase your cardiovascular endurance, power production, and muscle development.\nDesigned for all levels of fitness as a main source of exercise or as a supplement to your current training program."
+    },
+    {
+      "title": "Kids Classes",
+      "subtitle": "4-6 Years",
+      "startTime": "4:00 PM",
+      "endTime": "4:45 PM",
+      "instructor": "Anna Mifsud-Sweeney ",
+      "tags": ["Kids","Anna Mifsud-Sweeney "],
+      "description": ""
+    },
+    {
+      "title": "Kids Classes",
+      "subtitle": "7-11 Years",
+      "startTime": "4:45 PM",
+      "endTime": "5:45 PM",
+      "instructor": "Anna Mifsud-Sweeney ",
+      "tags": ["Kids","Anna Mifsud-Sweeney "],
+      "description": ""
+    },
+    {
+      "title": "Beginner Jiu Jitsu",
+      "subtitle": "Advanced Basics",
+      "startTime": "5:45 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Jesse Bell",
+      "tags": ["Jiu Jitsu", "Jesse Bell", "Beginners"],
+      "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
+    },
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "All Levels",
+      "startTime": "5:45 PM",
+      "endTime": "7:00 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Jiu Jitsu", "Mike Romano", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    },
+    {
+      "title": "MMA",
+      "subtitle": "All Levels",
+      "startTime": "7:00 PM",
+      "endTime": "8:30 PM",
+      "instructor": "Mike Romano",
+      "tags": ["MMA", "Mike Romano", "All Levels"],
+      "description": "Our MMA classes are the perfect mix of striking and grappling. With a heavy emphasis on the basics and strategy, this class is ideal for both beginner and advanced students."
+    }
+  ],
+  "Saturday": [
+    {
+      "title": "Jiu Jitsu",
+      "subtitle": "All Levels",
+      "startTime": "12:00 PM",
+      "endTime": "2:00 PM",
+      "instructor": "Mike Romano",
+      "tags": ["Jiu Jitsu", "Mike Romano", "All Levels"],
+      "description": "A class for all practitioners that have completed fundamentals. Consisting of drills, live drills, and sparring. The class is broken up into 2 parts: Class first followed by sparring. Sparring is optional and not supervised by an instructor."
+    }
+  ],
+  "Sunday": [
+    {
+      "title": "No Classes",
+      "subtitle": "",
+      "tags":[]
+    }
+  ]
+}
