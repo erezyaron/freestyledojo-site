@@ -1,5 +1,6 @@
 import Header from "../components/Header/Header";
 import Menus from "../components/Menus/Menus";
+import Top from '../components/Top/Top'
 import { useEffect } from 'react';
 import React from 'react';
 import Footer from "../components/Footer/Footer";
@@ -20,9 +21,12 @@ const BookAClass = () => {
   useExternalScript('https://widgets.mindbodyonline.com/javascripts/healcode.js');
   return (
     <>
-    <p>&nbsp;</p>
-        <Header />
-        <Menus />
+          <Top
+        bgImage={"/assets/jiu-jitsu-class-toronto-scaled.webp"}
+        title={"Kickboxing & Jiu Jitsu Classes"}
+        subtitle={"an innovative martial arts gym in toronto"}
+        buttons={[]}
+      />
         <div className="menu-button">
           <h2>Sign Up for Your Next Class</h2>
           </div>

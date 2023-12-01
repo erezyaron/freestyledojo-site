@@ -21,9 +21,13 @@ const FlyInSection = ({ title, subtitle, buttons }) => {
         <h2 className="fly-in-title">{title}</h2>
         <h1 className="fly-in-section">{subtitle}</h1>
         <div className="button-container">
-            {buttons.map((button,index) => (
+            {
+            (buttons.length > 0) &&
+              buttons.map((button,index) => (
               <ActionButton key={index} label={button.label} to={button.action} />
-          ))}
+           ))
+          }
+        
         </div>
       </div>
     </div>
