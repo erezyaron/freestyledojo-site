@@ -70,7 +70,6 @@ const WeeklyCalendar = () => {
               >
                 <h4>{classItem.title}</h4>
                 <div className="subtitle">{classItem.subtitle}</div>
-                <span className="instructor">{classItem.instructor}</span>
                 {classItem.startTime && classItem.endTime && (
                   <p>
                     {classItem.startTime} - {classItem.endTime}
