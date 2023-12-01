@@ -14,6 +14,7 @@
     font-family: 'Titillium Web';
     font-weight: 700;
     text-transform: uppercase;
+    max-width: fit-content;
   }
   .action-button a{
     text-decoration: none;

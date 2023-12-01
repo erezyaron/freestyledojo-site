@@ -1,8 +1,8 @@
 import React from "react";
 import "./TwoPartSection.css";
 import PropTypes from "prop-types";
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight,faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TwoPartSection = ({
   imageUrl,
@@ -10,19 +10,33 @@ const TwoPartSection = ({
   title,
   subtitle,
   content,
-  buttonText, buttonLink,
+  buttonText,
+  buttonLink,
+  listContents,
   reversed,
 }) => {
   TwoPartSection.propTypes = {
-    imageUrl: PropTypes.object,
+    imageUrl: PropTypes.string,
     imageAlt: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     content: PropTypes.string,
     buttonText: PropTypes.string,
     buttonLink: PropTypes.string,
+    listContents: PropTypes.string,
     reversed: PropTypes.bool,
   };
+  let listItems;
+  if (listContents) {
+    listItems = listContents.split("\\n").map((item, index) => (
+      <li className="trial-list-item" key={index}>
+        <span className="list-icon">
+          <FontAwesomeIcon icon={faAngleRight} />
+        </span>
+        <span className="list-text">{item}</span>
+      </li>
+    ));
+  }
   const paragraphs = content
     .split("\\n")
     .map((item, i) => <p key={i}>{item}</p>);
@@ -36,14 +50,22 @@ const TwoPartSection = ({
                 <h3>{title}</h3>
                 <h4>{subtitle}</h4>
                 {paragraphs}
-                <div className="inner-button-container">
-                  <div className="inner-button">
-                  <div className="about-item"><a className="button" href={buttonLink}>
-                        <FontAwesomeIcon className='icon' icon={faChevronRight} />
-                        {buttonText}
-                    </a></div>
+                {listContents && <ul className="items-list">{listItems}</ul>}
+                {buttonText && buttonLink && (
+                  <div className="inner-button-container">
+                    <div className="inner-button">
+                      <div className="about-item">
+                        <a className="button" href={buttonLink}>
+                          <FontAwesomeIcon
+                            className="icon"
+                            icon={faChevronRight}
+                          />
+                          {buttonText}
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           ) : (
@@ -61,14 +83,22 @@ const TwoPartSection = ({
                 <h3>{title}</h3>
                 <h4>{subtitle}</h4>
                 {paragraphs}
-                <div className="inner-button-container">
-                  <div className="inner-button">
-                  <div className="about-item"><a className="button" href={buttonLink}>
-                        <FontAwesomeIcon className='icon' icon={faChevronRight} />
-                        {buttonText}
-                    </a></div>
+                {listContents && <ul>{listItems}</ul>}
+                {buttonText && buttonLink && (
+                  <div className="inner-button-container">
+                    <div className="inner-button">
+                      <div className="about-item">
+                        <a className="button" href={buttonLink}>
+                          <FontAwesomeIcon
+                            className="icon"
+                            icon={faChevronRight}
+                          />
+                          {buttonText}
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             </div>
           )}

@@ -18,7 +18,7 @@ export const MenuSpacer = () => (
 );
 
 export const MenuImage = ({ src, alt }) => (
-  <div className="menu-image"><img className="logo" src={src} alt={alt} /></div>
+  <div className="menu-image"><a className="logo" href="/"><img className="logo" src={src} alt={alt} /></a></div>
 );
 
 export const DropdownMenu = ({ children, label, onClick }) => {

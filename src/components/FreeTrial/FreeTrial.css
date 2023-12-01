@@ -15,9 +15,8 @@
     padding-right: 50px;
     margin-right: 20px; /* Adjust spacing as needed */
   }
-  .trial-class-info h2 {
+  .trial-class-info-title {
     color: #CE4B2C;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
   }
   .trial-class-info p {
