@@ -11,6 +11,7 @@ const JiuJitsuClasses = () => {
         subtitle={"Jiu Jitsu Classes IN Toronto"}
         buttons={[
           { label: "book a class", action: "/book-a-class" },
+          // { label: "Join our WhatsApp Community", action: "https://chat.whatsapp.com/KNSbRwCogtdCgyzvjLuep9" },
         ]}
       />
       <TwoPartSection

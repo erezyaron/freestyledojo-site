@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
@@ -16,7 +16,6 @@ const ContactForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(`Field: ${name}, Value: ${value}`);
     setFormDetails({
       ...formDetails,
       [name]: value,
@@ -35,7 +34,7 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
           setSubmitMessage("Thank you, our team will respond soon.");
           // Handle here the success case, maybe clear the form or show a success message
         },

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-
+import PropTypes from 'prop-types'
 const ReviewItem = ({ review }) => {
-  console.log(review);
+  ReviewItem.propTypes = {
+    review: PropTypes.node
+  };
   const [isExpanded, setIsExpanded] = useState(false);
   const [isRaised, setIsRaised] = useState(false);
   const paragraphs = review.content.split('\n').map((item, i) => (

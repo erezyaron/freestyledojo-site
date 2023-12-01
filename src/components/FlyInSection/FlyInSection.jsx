@@ -6,7 +6,7 @@ const FlyInSection = ({ title, subtitle, buttons }) => {
   FlyInSection.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
-    buttons: PropTypes.object,
+    buttons: PropTypes.array,
   };
   return (
     <div className="widget-wrap">
