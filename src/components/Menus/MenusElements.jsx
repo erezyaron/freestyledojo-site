@@ -6,7 +6,7 @@ import React, {useState} from "react";
 import { Link as LinkRouter } from "react-router-dom";
 
 export const Menu = ({ children }) => (
-  <div className="menus" >{children}</div>
+  <div className="menus">{children}</div>
 );
 
 export const MenuContainer = ({ children }) => (
@@ -18,14 +18,14 @@ export const MenuSpacer = () => (
 );
 
 export const MenuImage = ({ src, alt }) => (
-  <div className="menu-image"><img className="logo" src={src} alt={alt} /></div>
+  <div className="menu-image"><a className="logo" href="/"><img className="logo" src={src} alt={alt} /></a></div>
 );
 
-export const DropdownMenu = ({ children, label }) => {
+export const DropdownMenu = ({ children, label, onClick }) => {
   const [isOpen, setIsOpen]=useState(false);
   return (
   <div className="dropdown-menu" onMouseEnter={()=>setIsOpen(true)} onMouseLeave={()=>setIsOpen(false)}>
-    <button className="menu-button">{label} <FontAwesomeIcon icon={faCaretDown} /></button>
+    <a className="menu-button" href={onClick}>{label} <FontAwesomeIcon icon={faCaretDown} /></a>
     {isOpen && (
       <div className="dropdown-content">
       {children}
@@ -35,13 +35,13 @@ export const DropdownMenu = ({ children, label }) => {
   );
 };
 
-export const MenuItem = ({ children, onClick }) => (
-  <div className="menu-item" onClick={onClick}>{children}</div>
+export const MenuItem = ({ children, to }) => (
+  <div className="menu-item"><a href={to}>{children}</a></div>
 );
 
 export const MenuButton = ({ onClick, label, variant }) => (
-  <button className={`menu-button ${variant}`} onClick={onClick}>
+  <a className={`menu-button ${variant}`} href={onClick}>
     {label}
-  </button> 
+  </a> 
 );
 

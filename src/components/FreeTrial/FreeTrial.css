@@ -15,9 +15,8 @@
     padding-right: 50px;
     margin-right: 20px; /* Adjust spacing as needed */
   }
-  .trial-class-info h2 {
+  .trial-class-info-title {
     color: #CE4B2C;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
   }
   .trial-class-info p {
@@ -28,6 +27,7 @@
     font-weight: 400;
   }
   .trial-class-form {
+    padding-top: 50px;
     flex: 1;
     /* flex-basis: 50%; */
   }
@@ -54,8 +54,18 @@
     cursor: pointer;
     font-size: 1.2em;
   }
+  form button:disabled {
+    grid-column: span 2; /* Makes the button take full width */
+    background: gray; /* Adjust to match the button color in the image */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: not-allowed;
+    font-size: 1.2em;
+  }
   
-  ul {
+  .trial-list {
     list-style-type: none;
     display: block;
     margin: 0;
@@ -65,7 +75,7 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
-  li {
+  .trial-list-item {
     margin-left: 20px;
     color: #509595;
     display: flex;

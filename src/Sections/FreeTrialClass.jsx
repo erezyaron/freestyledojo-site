@@ -6,20 +6,9 @@ import TrialClassForm from "../components/FreeTrial/FreeTrial";
 import TwoPartSection from "../components/TwoPartSection/TwoPartSection";
 import Footer from "../components/Footer/Footer";
 import Top from "../components/Top/Top";
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-const Home = () => {
-  const location = useLocation();
-  useEffect(() => {
-    if (location.pathname === '/programs') {
-      const section = document.getElementById('programs');
-      if (section) section.scrollIntoView({ behavior: 'smooth' });
-    }
-    if (location.pathname === '/contact-free-trial-class') {
-      const section = document.getElementById('TrialClassForm');
-      if (section) section.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [location]);
+
+const FreeTrialClass = () => {
+
   return (
     <>
       <Top
@@ -46,9 +35,8 @@ const Home = () => {
       />
       <NoGiSection />
       <GoogleReviews />
-      <TrialClassForm title="BOOK A FREE TRIAL CLASS" 
-      content="Try out any of our classes for free and see if Freestyle Dojo is the right fit for you!\nOur coaches are happy to guide you through your first steps into the world of martial arts to ensure you are comfortable, confident and ready to learn!"
-      hideBullets={false}
+      <TrialClassForm title={title} 
+      content={content}
       />
       <TwoPartSection
         imageUrl="/assets/toronto-martial-arts-gym-rental-scaled.jpg"
@@ -63,4 +51,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default FreeTrialClass;

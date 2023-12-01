@@ -1,10 +1,21 @@
-import './Background.css'
-import bgImage from '../../assets/jiu-jitsu-class-toronto-scaled.webp'
+import "./Background.css";
+import PropTypes from "prop-types";
 
-const Background = () => {
-    return (
-        <img className='background' src={bgImage} />
-    )
-}
+const Background = ({ bgImage, children }) => {
+  Background.propTypes = {
+    bgImage: PropTypes.string,
+    children: PropTypes.node.isRequired,
+  };
+  return (
+    <div className="background">
+      <div
+        className="background-image"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+};
 
-export default Background
+export default Background;
