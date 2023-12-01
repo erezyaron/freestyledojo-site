@@ -25,7 +25,7 @@ export const DropdownMenu = ({ children, label, onClick }) => {
   const [isOpen, setIsOpen]=useState(false);
   return (
   <div className="dropdown-menu" onMouseEnter={()=>setIsOpen(true)} onMouseLeave={()=>setIsOpen(false)}>
-    <a className="menu-button" href={onClick}>{label} <FontAwesomeIcon icon={faCaretDown} /></a>
+    <LinkRouter className="menu-button" to={onClick}>{label} <FontAwesomeIcon icon={faCaretDown} /></LinkRouter>
     {isOpen && (
       <div className="dropdown-content">
       {children}
@@ -36,12 +36,12 @@ export const DropdownMenu = ({ children, label, onClick }) => {
 };
 
 export const MenuItem = ({ children, to }) => (
-  <div className="menu-item"><a href={to}>{children}</a></div>
+  <div className="menu-item"><LinkRouter to={to}>{children}</LinkRouter></div>
 );
 
 export const MenuButton = ({ onClick, label, variant }) => (
-  <a className={`menu-button ${variant}`} href={onClick}>
+  <LinkRouter className={`menu-button ${variant}`} to={onClick}>
     {label}
-  </a> 
+  </LinkRouter> 
 );
 

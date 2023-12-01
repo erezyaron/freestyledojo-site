@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction.jsx";
 import Home from "./Sections/Home";
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/toronto-fitness-classes" element={<FitnessClasses />} />
         <Route path="/toronto-kids-martial-arts" element={<KidsClasses />} />
         <Route path="/about-our-coaches" element={<AboutOurCoaches />} />
-        <Route path="/gym-rentals" element={<GymRentalsPage />} />
+        <Route path="/?/gym-rentals" element={<GymRentalsPage />} />
         <Route path="/contact-free-trial-class" element={<Home />} />
         <Route path="/book-a-class" element={<BookAClass />} />
         <Route path="/schedule" element={<ClassSchedule />} />

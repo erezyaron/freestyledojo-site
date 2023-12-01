@@ -3,6 +3,7 @@ import './Footer.css';
 import { faLocationDot, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faInstagram, faFacebookF, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,14 +14,14 @@ const Footer = () => {
                     <img className='image' src='/assets/freestyle-feather-logo.webp' />
                 </div>
                 <div className="footer-socials">
-                    <span className='social-item'><a href="https://www.facebook.com/profile.php?id=100076292797233" target='_blank' rel='noreferrer'>
-                        <FontAwesomeIcon icon={faFacebookF} /></a></span>
-                        <span className='social-item'><a href="https://www.instagram.com/freestyledojo/" target='_blank' rel='noreferrer'>
-                        <FontAwesomeIcon icon={faInstagram} /></a></span>
-                        <span className='social-item'><a href="https://goo.gl/maps/sbaAUU82DKgeaX3L8" target='_blank' rel='noreferrer'>
-                        <FontAwesomeIcon  icon={faGoogle} /></a></span>
-                        <span className='social-item'><a href="https://www.youtube.com/@freestyledojo9340" target='_blank' rel='noreferrer'>
-                        <FontAwesomeIcon  icon={faSquareYoutube} /></a></span>
+                    <span className='social-item'><Link to="https://www.facebook.com/profile.php?id=100076292797233" target='_blank' rel='noreferrer'>
+                        <FontAwesomeIcon icon={faFacebookF} /></Link></span>
+                        <span className='social-item'><Link to="https://www.instagram.com/freestyledojo/" target='_blank' rel='noreferrer'>
+                        <FontAwesomeIcon icon={faInstagram} /></Link></span>
+                        <span className='social-item'><Link to="https://goo.gl/maps/sbaAUU82DKgeaX3L8" target='_blank' rel='noreferrer'>
+                        <FontAwesomeIcon  icon={faGoogle} /></Link></span>
+                        <span className='social-item'><Link to="https://www.youtube.com/@freestyledojo9340" target='_blank' rel='noreferrer'>
+                        <FontAwesomeIcon  icon={faSquareYoutube} /></Link></span>
                 </div>
             </div>
         </div>
@@ -33,18 +34,18 @@ const Footer = () => {
         <a href="tel:647-245-8829" className='link'>
         <FontAwesomeIcon icon={faPhoneFlip} />
         &nbsp;647-245-8829</a>
-        <a className='button' href="/contact-free-trial-class">FREE TRIAL CLASS</a>
+        <Link className='button' to="/contact-free-trial-class">FREE TRIAL CLASS</Link>
       </div>
         </div>
         <div className='footer-right'>
         <div className="footer-links">
         <h3>LINKS</h3>
         <ul  className='footer-list'>
-        <li className='footer-list-item'><a className='link' href="/schedule">Class Schedule</a></li>
-        <li className='footer-list-item'><a className='link' href="/about-our-coaches">About Us</a></li>
-        <li className='footer-list-item'><a className='link' href="/gym-rentals">Gym Rentals</a></li>
-        <li className='footer-list-item'><a className='link' href="/programs">Progarms</a></li>
-        <li className='footer-list-item'><a className='link' href="/book-a-class">Book a class</a></li>
+        <li className='footer-list-item'><Link className='link' to="/schedule">Class Schedule</Link></li>
+        <li className='footer-list-item'><Link className='link' to="/about-our-coaches">About Us</Link></li>
+        <li className='footer-list-item'><Link className='link' to="/gym-rentals">Gym Rentals</Link></li>
+        <li className='footer-list-item'><Link className='link' to="/programs">Progarms</Link></li>
+        <li className='footer-list-item'><Link className='link' to="/book-a-class">Book a class</Link></li>
         </ul>
       </div>
         </div>

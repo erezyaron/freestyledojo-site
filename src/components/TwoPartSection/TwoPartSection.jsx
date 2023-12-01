@@ -3,6 +3,7 @@ import "./TwoPartSection.css";
 import PropTypes from "prop-types";
 import { faChevronRight,faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const TwoPartSection = ({
   imageUrl,
@@ -55,13 +56,13 @@ const TwoPartSection = ({
                   <div className="inner-button-container">
                     <div className="inner-button">
                       <div className="about-item">
-                        <a className="button" href={buttonLink}>
+                        <Link className="button" to={buttonLink}>
                           <FontAwesomeIcon
                             className="icon"
                             icon={faChevronRight}
                           />
                           {buttonText}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -88,13 +89,13 @@ const TwoPartSection = ({
                   <div className="inner-button-container">
                     <div className="inner-button">
                       <div className="about-item">
-                        <a className="button" href={buttonLink}>
+                        <Link className="button" to={buttonLink}>
                           <FontAwesomeIcon
                             className="icon"
                             icon={faChevronRight}
                           />
                           {buttonText}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
