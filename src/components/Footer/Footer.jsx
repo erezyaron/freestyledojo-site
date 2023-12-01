@@ -1,13 +1,5 @@
 import React from 'react';
 import './Footer.css'; 
-import {
-    Nav,
-    NavbarContainer,
-    NavSpacer,
-    NavMenu,
-    NavItem,
-    NavLinks,
-  } from "../Header/HeaderElements";  
 import { faLocationDot, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faInstagram, faFacebookF, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +10,7 @@ const Footer = () => {
         <div className='footer-left'>
             <div className='footer-column'>
                 <div className='footer-image'>
-                    <img className='image' src='/src\assets\freestyle-feather-logo.webp' />
+                    <img className='image' src='/assets/freestyle-feather-logo.webp' />
                 </div>
                 <div className="footer-socials">
                     <span className='social-item'><a href="https://www.facebook.com/profile.php?id=100076292797233" target='_blank' rel='noreferrer'>
