@@ -37,7 +37,7 @@ const App = () => {
         <Route path="/schedule" element={<ClassSchedule />} />
       </Routes>
     </Router>
-  )
+  );
 };
 
 export default App;
