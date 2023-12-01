@@ -43,7 +43,7 @@
     align-items: center;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: auto auto;
     width: 100%;
   }
   label {
