@@ -1,14 +1,17 @@
+
+
 #about {
   width: 100%;
   background-color: #f1ede1;
-  padding: 50px 0px 50px 0px;
+  padding: 20px 0px;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .about-container {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Image takes up 1 fraction, Text takes up 2 fractions */
+  grid-template-columns: 1fr 2fr;
   gap: 100px; /* Space between image and text */
   max-width: 1200px; /* Maximum width of the container */
   margin: auto; /* Center the container */
@@ -27,7 +30,8 @@
 .about-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-family: "Rubik";
   font-weight: 400;
   width: 74%;
@@ -110,20 +114,7 @@
   align-items: center;
   width: 100%;
 }
-.schedule-gap {
-}
-.schedule-widget-wrap {
-}
-.schedule-widget {
-}
-.schedule-widget-container {
-}
-.schedule-icon-wrapper {
-}
-.schedule-icon {
-}
-.schedule-widget-heading {
-}
+
 .info-section {
   display: flex;
   justify-content: space-evenly;
@@ -189,7 +180,7 @@
 .program-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between ;/*calc(25% - 20px);*/
+  justify-content: space-between; /*calc(25% - 20px);*/
   flex-basis: calc(25%);
   color: white;
   font-style: italic;
@@ -221,7 +212,7 @@
 .jiu-jitsu {
   background-color: #509595;
 }
-.kickboxing {
+.mma {
   background-color: #23425c;
 }
 .fitness {
@@ -247,7 +238,7 @@
 .program-item-link {
   display: block;
   width: 100%;
-  text-decoration: none; 
+  text-decoration: none;
 }
 .program-item:hover .program-text {
   transform: translateY(50px); /* Move text down */
@@ -261,17 +252,39 @@
 
 /* Split line for the other sections on hover */
 .jiu-jitsu:hover:before,
-.kickboxing:hover::before,
+.mma:hover::before,
 .fitness:hover::before,
 .kids:hover::before {
   transform: translateX(-50%) rotate(45deg); /* Rotate line to form one side of the X */
 }
 .jiu-jitsu:hover:after,
-.kickboxing:hover::after,
+.mma:hover::after,
 .fitness:hover::after,
 .kids:hover::after {
   transform: translateX(-50%) rotate(-45deg); /* Rotate line to form the other side of the X */
 }
 .black-div {
   background-color: #000;
+}
+@media (max-width: 768px){
+  body{ font-size: 14px;}
+  #about {padding:  20px 0;}
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .about-image { padding-left: 0;}
+  .about-text {width: 100%;}
+  .programs-container {flex-wrap: wrap;}
+  .info-item{width: 100%;}
+}
+@media (max-width: 1024px) {
+  /* Adjustments for medium-sized screens like tablets and small desktops */
+  .info-item, .program-item {
+    width: 45%; /* Adjust width for medium-sized screens */
+  }
+
+  .programs-container, .info-section {
+    justify-content: space-around; /* Improve spacing for medium-sized screens */
+  }
 }

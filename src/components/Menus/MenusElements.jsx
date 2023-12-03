@@ -9,8 +9,8 @@ export const Menu = ({ children }) => (
   <div className="menus">{children}</div>
 );
 
-export const MenuContainer = ({ children }) => (
-  <div className="menu-container">{children}</div>
+export const MenuContainer = ({ children, open }) => (
+  <div className={`menu-container ${open ? 'open' : ''}`}>{children}</div>
 );
 
 export const MenuSpacer = () => (

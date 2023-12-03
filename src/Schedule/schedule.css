@@ -1,0 +1,72 @@
+.schedule-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    background-color: #F1EDE1;
+    color: black;
+  }
+  
+  .day-schedule {
+    border: 1px solid #FFBC7D;
+    padding: 10px;
+  }
+  
+  .class-entry {
+    background-color: #54595F;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #6EC1E4;
+  }
+.class-entry h4 {
+    margin: 0;
+}
+  .class-entry p {
+    font-size: 0.75rem;
+    color: #61CE70;
+  }
+  
+  .instructor {
+    color: #F1EDE1;
+    font-size: 0.85rem;
+    line-height: 0.5;
+    
+  }
+  .subtitle {
+    font-size: 0.7rem;
+  }
+  .tag-column {
+    justify-content: center;
+  }
+  .filter-container {
+    color: black;
+    background-color: #F1EDE1;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+  }
+  label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .filter-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  .filter-container .active {
+    font-weight: bold;
+    color: #FFBC7D;
+  }
+  @media (max-width: 768px) {
+    .schedule-container {
+      display: flex; 
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+     .day-schedule {flex:1;min-width: 250px;}
+  }

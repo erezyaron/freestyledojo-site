@@ -1,69 +1,109 @@
+/* Base styles for large screens */
 .fly-in {
-    display: flex;
-    flex-direction: column;
-    color: white;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.fly-in-title {
+  font-size: 25px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Taviraj";
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.fly-in-section {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Titillium Web";
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.widget-wrap {
+  display: flex;
+  position: relative;
+  width: 69%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  left: 144px;
+  margin-top: 100px;
+  animation: bounceInLeft 1s ease forwards;
+}
+
+.widget {
+  width: 65%;
+}
+
+.widget-container {
+  margin-bottom: 5px;
+}
+
+.widget-separator {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.widget-span-separator {
+  width: 65%;
+  height: 2px;
+  display: block;
+  background-color: #E8B352;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
   .fly-in-title {
-    font-size: 25px;
-    font-weight: 400;
-    font-style: italic;
-    font-family: "Taviraj";
-    text-transform: uppercase;
-    text-align: left;
-    line-height: 1;
-    margin: 0;
-    padding: 0;
+    font-size: 12.5px; /* Reduced size by 50% */
   }
-  
+
   .fly-in-section {
-    font-size: 38px; 
-    font-weight: 700;
-    font-family: "Titillium Web";
-    text-transform: uppercase;
-    text-align: left;
-    line-height: 1;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    font-size: 19px; /* Reduced size by 50% */
   }
-  @keyframes bounceInLeft{60%,75%,90%,from,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(-3000px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}
+
   .button-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .action-button {
+    padding: 10px 5px; /* Reduced padding by 50% */
+    margin: 5px 5px; /* Reduced margin */
+    font-size: 9px; /* Reduced font size */
+  }
+
   .widget-wrap {
-    display: flex;  
-    position: relative;
-    width: 69%;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    animation: bounceInLeft 1s ease forwards;
-    left: 144px;
-    margin-top: 100px;
-   
+    width: 100%; /* Full width for small screens */
+    left: 0; /* Reset left positioning */
+    margin-top: 50px; /* Reduced margin by 50% */
+    animation: none; /* Remove animation */
   }
-    .widget{
-        width: 65%;
-    }
-  .widget-container {
-    margin-bottom: 5px;
+
+  .widget {
+    width: 100%; /* Full width for widgets on small screens */
   }
-  .widget-separator {
-    display: flex;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+
   .widget-span-separator {
-    width: 65%;
-    height: 2px;
-    display: block;
-    margin: 0;
-    direction: ltr;
-    background-color: #E8B352;
-    margin: 0;
-    padding: 0;
+    width: 100%; /* Full width for separators on small screens */
+  }
 }

@@ -15,7 +15,7 @@ const FitnessClasses = () => {
       />
       <TwoPartSection
         imageUrl="/assets/toronto-strength-conditioning-class-scaled.jpg"
-        imageAlt="Kickboxing classes are available"
+        imageAlt="MMA classes are available"
         title="Strength & Fitness Conditioning"
         subtitle="Take your fitness to the next level"
         content="Located in the West End of Toronto, Freestyle Dojo acts as a hub for those wanting to benefit their strength and endurance to become better athletes on all levels. Looking to take your fitness to the next level? Try one of our classes!"

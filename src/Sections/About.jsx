@@ -16,7 +16,7 @@ const About = () => {
                     At Freestyle our mission is to provide you and our community with world-class martial arts instruction. We do so in an environment that is welcoming, whether you are trying martial arts for the 1st time or already an advanced practitioner.
                     </p>
                     <p className="about-item text">
-                    Located in the heart of Toronto’s West End, our dojo offers the best classes in a range of martial arts disciplines. Our expert instructors specialize in teaching Jiu Jitsu, Kickboxing, Fitness & Conditioning Classes – For Both Kids & Adults. 
+                    Located in the heart of Toronto’s West End, our dojo offers the best classes in a range of martial arts disciplines. Our expert instructors specialize in teaching Jiu Jitsu, MMA, Fitness & Conditioning Classes – For Both Kids & Adults. 
                     </p>
                     <p className="about-item text">
                     All of our classes start with a free trial so you can try our dojo out and see if it is the right fit for you and your goals!

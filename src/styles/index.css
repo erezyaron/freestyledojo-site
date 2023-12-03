@@ -1,0 +1,591 @@
+:root {
+  font-family: "Titillium Web", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
+
+  color-scheme: light dark;
+  color: var(--text);
+  background-color: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100vw;
+}
+/* Header Styles */
+.custom-header {
+  background-color: var(--background); /* Custom color for background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-size: 1rem; /* Using rem units for font size */
+}
+
+/* Contact Info Styles */
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.address a,
+.phone a {
+  margin-right: 1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.desktop-link {
+  display: inline-block;
+}
+.mobile-link {
+  display: none;
+}
+/* Social Links Styles */
+.social-links a {
+  color: #fff; /* White icon color */
+  font-size: 24px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--ni5);
+}
+.address a:hover,
+.phone a:hover {
+  color: var(--ni5);
+}
+/* Default styles for larger screens */
+.menus .menu-list.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus .menu-list .menu-item {
+  color: var(--text); /* Text color for top menu items */
+  /* Add any additional top menu item styling here */
+}
+.menus .menu-list .menu-item .submenu {
+  background-color: var(--background); /* Background color covering the image */
+  color: var(--text); /* Text color for dropdown menu items */
+  /* Add any additional dropdown menu item styling here */
+}
+.menu-list {
+  list-style: none; /* Remove list bullets */
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  position: relative; /* For dropdown positioning */
+  margin-right: 20px; /* Add spacing between menu items */
+}
+.menu-item ul.submenu {
+  width: 100%;
+  min-width: max-content;
+}
+.menu-item ul.submenu li {
+  list-style: none;
+  text-align: left;
+  padding: 5px;
+}
+.menu-item:last-child {
+  margin-right: 0; /* Remove margin from the last menu item */
+}
+/* Separator styling */
+.menus .separator {
+  background-color: var(--ni5); /* Color for the separator line */
+  /* Add any additional separator styling here */
+}
+.submenu {
+  position: absolute;
+  top: 100%; /* Positioned right below the button */
+  left: 0;
+  background-color: var(--background); /* Use background color for dropdown */
+  width: 100%;
+  border-top: 2px solid var(--ni5); /* Use ni5 color for separator */
+  z-index: 1;
+  display: none; /* Initially hide dropdowns */
+  padding-inline-start: 0;
+}
+
+.menu-item:hover .submenu {
+  display: block; /* Show the dropdown on hover */
+}
+.menu-item a {
+  color: var(--text); /* Text color */
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Add hover effect */
+
+  /* Add padding and text alignment */
+  padding: 10px 0;
+
+  display: block;
+}
+.button {
+  background-color: var(--ni5); /* Button background color */
+  color: white; /* Button text color */
+  border: 2px solid var(--ni5); /* Button border */
+  padding: 10px 20px; /* Button padding */
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Add hover effect */
+  cursor: pointer;
+
+  /* Add margin for spacing */
+  margin-right: 20px;
+}
+
+.button:hover {
+  background-color: transparent; /* Remove background color on hover */
+  color: var(--ni5);
+}
+.menu-item a:hover {
+  background-color: var(--ni5); /* Use ni5 color on hover */
+  color: white;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  @media screen and (max-width: 768px) {
+    width: 50px; /* Adjusted width for smaller screens */
+  }
+}
+.hamburger-icon {
+  display: none; /* Initially hide the hamburger icon */
+  cursor: pointer;
+
+  /* Add padding for clickable area */
+  padding: 10px;
+
+  /* Adjust icon size for small screens */
+  @media screen and (max-width: 768px) {
+    display: block; /* Show the hamburger icon on small screens */
+  }
+}
+.hours-phone-visit {
+  
+  bottom: 0;
+  background-color: var(--background); /* Use your primary color here */
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.schedule-column {
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%; /* Adjust width to take full width on small screens */
+  vertical-align: middle;
+  align-content: flex-start;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.info-icon-behind {
+  position: absolute;
+  z-index: 0; /* Place it behind the text */
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: 600;
+  color: var(--secondary); /* Use your accent color here */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the icon */
+  opacity: 0.4; /* Adjust opacity as needed */
+}
+
+.info-item {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 30%; /* Full width on small screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center text */
+}
+
+.info-title {
+  color: var(--ni3); /* Use your ni3 color for the title */
+  margin: 0;
+  padding: 0;
+}
+
+div.info-text,
+p.info-text {
+  margin: 0;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.info-text a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: white; /* Use white color for links */
+}
+.day-schedule1 {
+  margin-right: 20px; /* Add margin between day schedules */
+  min-width: max-content;
+}
+#programs {
+  width: 100%;
+  bottom: 0;
+  background-color: #f1ede1;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding-block: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.programs-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.program-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*calc(25% - 20px);*/
+  flex-basis: calc(25%);
+  color: white;
+  font-style: italic;
+  font-weight: 700;
+  font-family: "Titillium Web";
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+  z-index: 2; /* Ensure text is above the lines */
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+#programs h2 {
+  color: #ce4b2c;
+  font-size: 2rem;
+  margin: 0;
+}
+
+#programs h3 {
+  color: black;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.program-text {
+  transform: translateY(171%);
+  font-size: 1.75rem;
+  transition: transform 0.3s ease-in-out;
+}
+.jiu-jitsu {
+  background-color: #509595;
+}
+.mma {
+  background-color: #23425c;
+}
+.fitness {
+  background-color: #e8b352;
+}
+.kids {
+  background-color: #ce4b2c;
+}
+
+.program-item::before,
+.program-item::after {
+  content: "";
+  position: absolute;
+  bottom: auto; /* Starting position at the bottom of the item */
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  width: 50%; /* Line width as a percentage of the item's width */
+  height: 2px; /* Line thickness */
+  background-color: white;
+  transition: all 0.3s ease-out; /* Transition effect for smooth animation */
+  transform: translateX(-50%);
+}
+.program-item-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+.program-item:hover .program-text {
+  transform: translateY(50px); /* Move text down */
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+.program-item:hover::before,
+.program-item:hover::after {
+  bottom: 20px; /* Move lines down */
+}
+
+/* Split line for the other sections on hover */
+.jiu-jitsu:hover:before,
+.mma:hover::before,
+.fitness:hover::before,
+.kids:hover::before {
+  transform: translateX(-50%) rotate(45deg); /* Rotate line to form one side of the X */
+}
+.jiu-jitsu:hover:after,
+.mma:hover::after,
+.fitness:hover::after,
+.kids:hover::after {
+  transform: translateX(-50%) rotate(-45deg); /* Rotate line to form the other side of the X */
+}
+/* Hide the menu items by default for smaller screens */
+@media screen and (max-width: 768px) {
+  .menus .menu-list {
+    display: none;
+  }
+  .menus .hamburger-button {
+    display: block;
+    /* Add styling for the hamburger button icon */
+  }
+  #programs h2 {
+    font-size: 1rem;
+  }
+  #programs h3 {
+    font-size: 0.75rem;
+  }
+  .program-item {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-header {
+    flex-direction: column;
+    align-items: right;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .address,
+  .phone {
+    margin-right: 0;
+  }
+  .desktop-link {
+    display: none;
+  }
+
+  /* Show mobile links on small screens */
+  .mobile-link {
+    display: inline-block;
+  }
+}
+.widget-wrap {
+  display: flex;
+  position: relative;
+  width: 69%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  left: 66px;
+  margin-top: 150px;
+  animation: bounceInLeft 1s ease forwards;
+}
+
+.fly-in {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%; /* Vertically centered */
+  transform: translateY(-50%);
+  text-align: center;
+
+  /* Adjust the width and other styles as needed */
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+
+  /* Additional styles for the title and section */
+  .fly-in-title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Taviraj";
+    font-weight: bold;
+    color: var(--text); /* Text color */
+    border-top: 2px solid var(--ni3); /* Top border with --ni3 color */
+    font-style: italic; /* Italicize the title */
+    margin: 0;
+    text-align: left;
+  }
+
+  .fly-in-section {
+    font-weight: 700;
+    font-family: "Titillium Web";
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: var(--text); /* Text color */
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  /* Styles for ActionButton */
+  .action-button {
+    background-color: var(--ni5); /* Background color */
+    color: var(--text); /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 4px; /* Add border radius */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px 10px;
+    text-align: left;
+    transition: background-color 0.3s;
+    font-family: "Titillium Web";
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: fit-content;
+    i {
+      margin-right: 5px; /* Spacing between icon and text */
+    }
+
+    &:hover {
+      background-color: var(--ni4); /* Change color on hover */
+    }
+    /* Adjust font size, font family, and other button styles as needed */
+  }
+  .action-button a {
+    text-decoration: none;
+  }
+}
+
+@keyframes bounceInLeft {
+  0%,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items:  center;
+  background-color: black;
+}
+.footer-left {
+  position: relative;
+  display: flex;
+}
+.footer-column {
+  padding: 10px;
+}
+.footer-address {
+  text-align: center;
+  flex-basis: 40%;
+  line-height: 1;
+}
+.link {
+  display: block;
+  
+}
+.footer.button {
+  padding: unset;
+  padding-left: 20px;
+  padding-right: 20px;
+}

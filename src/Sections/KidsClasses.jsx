@@ -6,16 +6,16 @@ const KidsClasses = () => {
   return (
     <>
       <Top
-        bgImage={"/assets/kids-kickboxing-class-toronto-scaled.jpg"}
-        title={"Specializing In Kids Jiu Jitus & KickBoxing"}
+        bgImage={"/assets/kids-mma-class-toronto-scaled.jpg"}
+        title={"Specializing In Kids Jiu Jitus & MMA"}
         subtitle={"Kids Martial Arts Program IN Toronto"}
         buttons={[
           { label: "free trial class", action: "/contact-free-trial-class" },
         ]}
       />
       <TwoPartSection
-        imageUrl="/assets/kids-kickboxing-lessons-scaled.jpg"
-        imageAlt="Kickboxing classes are available"
+        imageUrl="/assets/kids-mma-lessons-scaled.jpg"
+        imageAlt="MMA classes are available"
         title="MMA & JIU JITSU For CHILDREN"
         content="Enroll your child in one of our programs so that we can help them develop their fitness and build a strong foundation for important life skills. From self-discipline to problem-solving, our in-depth kid’s programs are built to help develop youth."
         reversed={true}

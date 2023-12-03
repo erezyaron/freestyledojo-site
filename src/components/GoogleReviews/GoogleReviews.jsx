@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ReviewItem from './ReviewItem';
 import reviewsData from './reviews.json'; // Path to your JSON file
 import './GoogleReviews.css'
-import { faDisplay } from '@fortawesome/free-solid-svg-icons';
 
 const GoogleReviews = () => {
   const [reviews, setReviews] = useState([]);

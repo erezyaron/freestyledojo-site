@@ -9,7 +9,7 @@ const ReviewItem = ({ review }) => {
   const paragraphs = review.content.split('\n').map((item, i) => (
     <React.Fragment key={i}>
       {item}
-      {i < review.content.split('\n').length - 1 && <br />}
+      {i < review.content.split('\\n').length - 1 && <br />}
     </React.Fragment>
   ));
   const handleReadMoreClick = () => {

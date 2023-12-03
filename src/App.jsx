@@ -1,43 +1,36 @@
-import * as React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import "./index.css";
-import UnderConstruction from "./components/UnderConstruction/UnderConstruction.jsx";
-import Home from "./Sections/Home";
-import EventsPage from "./Sections/EventsPage.jsx";
-import JiuJitsuClasses from "./Sections/JiuJitsuClasses.jsx";
-import KickboxingClasses from "./Sections/KickboxingClasses.jsx";
-import FitnessClasses from "./Sections/FitnessClasses.jsx";
-import KidsClasses from "./Sections/KidsClasses.jsx";
-import GymRentalsPage from "./Sections/GymRentalsPage.jsx";
-import BookAClass from "./Sections/BookAClass.jsx";
-import AboutOurCoaches from "./Sections/AboutOurCoaches.jsx";
-import ClassSchedule from "./Sections/ClassSchedule.jsx";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './Pages/HomePage'
+import EventsPage from './Pages/EventsPage'
+import JiuJitsuClassesPage from './Pages/JiuJitsuClasses'
+import KickboxingClassesPage from './Pages/KickboxingClasses'
+import FitnessClassesPage from './Pages/FitnessClasses'
+import KidsClassesPage from './Pages/KidsClasses'
+import AboutOurCoachesPage from './Pages/AboutOurCoaches'
+import GymRentalsPage from './Pages/GymRentalsPage'
+import BookAClassPage from './Pages/BookAClass'
+import ClassSchedulePage from './Pages/ClassSchedule'
+ 
+function App() {
 
-const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/programs" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
-        <Route
-          path="/toronto-jiu-jitsu-classes"
-          element={<JiuJitsuClasses />}
-        />
-        <Route
-          path="/toronto-kickboxing-classes"
-          element={<KickboxingClasses />}
-        />
-        <Route path="/toronto-fitness-classes" element={<FitnessClasses />} />
-        <Route path="/toronto-kids-martial-arts" element={<KidsClasses />} />
-        <Route path="/about-our-coaches" element={<AboutOurCoaches />} />
-        <Route path="/?/gym-rentals" element={<GymRentalsPage />} />
-        <Route path="/contact-free-trial-class" element={<Home />} />
-        <Route path="/book-a-class" element={<BookAClass />} />
-        <Route path="/schedule" element={<ClassSchedule />} />
+        <Route path="/programs" element={<HomePage />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/toronto-jiu-jitsu-classes" element={<JiuJitsuClassesPage />} />
+        <Route path="/toronto-mma-classes" element={<KickboxingClassesPage />} />
+        <Route path="/toronto-fitness-classes" element={<FitnessClassesPage />} />
+        <Route path="/toronto-kids-martial-arts" element={<KidsClassesPage />} />
+        <Route path="/about-our-coaches" element={<AboutOurCoachesPage />} />
+        <Route path="/gym-rentals" element={<GymRentalsPage />} />
+        <Route path="/contact-free-trial-class" element={<HomePage />} />
+        <Route path="/book-a-class" element={<BookAClassPage />} />
+        <Route path="/schedule" element={<ClassSchedulePage />} />
       </Routes>
     </Router>
-  );
-};
+  )
+}
 
-export default App;
+export default App

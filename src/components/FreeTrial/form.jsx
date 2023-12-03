@@ -86,7 +86,7 @@ const ContactForm = () => {
         >
           <option value="">Select Interest</option>
           <option value="jiu_jitsu">Jiu Jitsu</option>
-          <option value="kickboxing">Kickboxing</option>
+          <option value="MMA">MMA</option>
           <option value="fitness">Fitness</option>
           <option value="kids">Kids Programs</option>
           <option value="kids">General Inquiry</option>

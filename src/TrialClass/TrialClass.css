@@ -1,0 +1,46 @@
+.trial-class-section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--text);
+    padding-left: 20px;
+}
+.trial-class-info {
+    flex: 1;
+}
+.trial-class-info-title {
+    color: var(--ni5);
+}
+.trial-class-info-text {
+    color: var(--background);
+    font-family: "Rubik";
+    font-weight: 400;
+}
+.trial-list-text {
+    color: var(--ni1)
+}
+.trial-class-form {
+    flex: 1;
+    padding: 50px;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+form input, form select, form textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+form button {
+    grid-column: span 2;
+    background: var(--ni5);
+    cursor: pointer;
+}
+form button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+form p {
+    color: black;
+}

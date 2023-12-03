@@ -33,7 +33,7 @@ const BookAClass = () => {
     <>
       <Top
         bgImage={"/assets/jiu-jitsu-class-toronto-scaled.webp"}
-        title={"Kickboxing & Jiu Jitsu Classes"}
+        title={"MMA & Jiu Jitsu Classes"}
         subtitle={"an innovative martial arts gym in toronto"}
         buttons={[{ label: "Schedule", action: "/schedule" }]}
       />

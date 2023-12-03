@@ -1,3 +1,11 @@
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; right: 10px;z-index: 100;
+}
+
 .menus {
   display: inline;
   justify-content: space-between;
@@ -90,4 +98,39 @@
 .menu-item:not(:last-child) {
   border-bottom: 1px solid orange;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {display: block;}
+  .menu-container {display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  }
+  .menu-container.open {
+    display: flex;
+    padding: 0 20px; 
+    
+  }
+
+  .menu-image, .logo {
+    width: 50%;
+  }
+
+  .menu-button {
+    font-size: 16px;
+    padding: 10px 15px; 
+  }
+
+  .menu-item-wrapper, .menu-item-wrapper-no-border {
+    border-right: none;
+    transform: translateY(0); 
+  }
+
+  .dropdown-content {
+    width: auto; 
+  }
 }

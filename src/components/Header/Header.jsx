@@ -1,12 +1,5 @@
 import './Header.css'
-import {
-    Nav,
-    NavbarContainer,
-    NavSpacer,
-    NavMenu,
-    NavItem,
-    NavLinks,
-  } from "./HeaderElements";  
+import { Nav, NavbarContainer, NavSpacer, NavMenu, NavItem, NavLinks } from "./HeaderElements";  
 import { faLocationDot, faPhoneFlip } from '@fortawesome/free-solid-svg-icons';
 import { faGoogle, faInstagram, faFacebookF, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
 

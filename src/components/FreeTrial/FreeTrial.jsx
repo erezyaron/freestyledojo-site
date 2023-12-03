@@ -32,7 +32,7 @@ const TrialClassForm = ({ title, content, hideBullets }) => {
               <span className="list-icon">
                 <FontAwesomeIcon icon={faAngleRight} />
               </span>
-              <span className="list-text">Kickboxing Classes</span>
+              <span className="list-text">MMA Classes</span>
             </li>
             <li className="trial-list-item">
               <span className="list-icon">

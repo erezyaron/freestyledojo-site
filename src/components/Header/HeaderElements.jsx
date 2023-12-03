@@ -49,7 +49,7 @@ export const NavLinks = ({ children, to, icon, ...rest }) => {
       {...rest}
     >
       {icon && <FontAwesomeIcon icon={icon} />}
-      {children}
+      <span className="nav-links-text">{children}</span>
     </a>
   );
 };
