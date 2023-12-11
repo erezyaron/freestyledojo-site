@@ -4,6 +4,19 @@
     background-color: var(--text);
     padding-left: 20px;
 }
+@media (max-width: 768px) {
+    .trial-class-section {
+        flex-direction: column;
+        align-items: center; /* Center the items vertically */
+        padding: 10px; /* Adjust padding as needed */
+    }
+
+    .trial-class-info, .trial-class-form {
+        /* width: 100%; */
+        box-sizing: border-box; /* Include padding in width calculation */
+        padding-bottom: 20px;
+    }
+}
 .trial-class-info {
     flex: 1;
 }
@@ -20,12 +33,17 @@
 }
 .trial-class-form {
     flex: 1;
-    padding: 50px;
+    padding: 20px;
 }
 form {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
+}
+@media (max-width: 768px) {
+    form {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+    }
 }
 form input, form select, form textarea {
     border: 1px solid #ccc;

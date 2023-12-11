@@ -30,6 +30,13 @@ const Menus = () => {
   
   return (
     <nav className="menus">
+      {isSmallScreen && (
+        <div className="left-side-image">
+            <LinkRouter to="/">
+            <img className="logo" src="/assets/FS-LOGO.png" alt="Freestyle Dojo Logo" />
+            </LinkRouter>
+        </div>
+      )}
       <div className="logo" onClick={toggleMenu}>
         {isSmallScreen ? (
           <div className="hamburger-icon">

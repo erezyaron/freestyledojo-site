@@ -98,7 +98,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.left-side-image {
+  display: none;
+}
 .menu-item {
   position: relative; /* For dropdown positioning */
   margin-right: 20px; /* Add spacing between menu items */
@@ -172,8 +174,9 @@ body {
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 50px; /* Adjusted width for smaller screens */
+    order: 2;
   }
 }
 .hamburger-icon {
@@ -381,6 +384,10 @@ p.info-text {
     display: block;
     /* Add styling for the hamburger button icon */
   }
+  .left-side-image {
+    display: block;
+  }
+
   #programs h2 {
     font-size: 1rem;
   }
@@ -428,6 +435,9 @@ p.info-text {
   /* Show mobile links on small screens */
   .mobile-link {
     display: inline-block;
+  }
+  .footer.button {
+    display: none;
   }
 }
 .widget-wrap {
@@ -594,14 +604,20 @@ button:focus-visible {
 }
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items:  center;
   background-color: black;
 }
-.footer-left {
+.footer-left, .footer-center, .footer-right {
+  flex: 1; 
   position: relative;
+  align-items: center;
+  align-content: center;
   display: flex;
-}
+  justify-content: space-evenly;
+ }
+/* .footer-left {
+} */
 .footer-column {
   padding: 10px;
 }
@@ -618,4 +634,16 @@ footer {
   padding: unset;
   padding-left: 20px;
   padding-right: 20px;
+}
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center items */
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    flex: none; /* Remove flex sizing */
+    width: 100%; /* Each section takes full width */
+    margin-bottom: 20px; /* Add space between stacked sections */
+  }
 }
