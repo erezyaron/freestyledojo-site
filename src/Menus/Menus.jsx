@@ -33,11 +33,7 @@ const Menus = () => {
       <div className="logo" onClick={toggleMenu}>
         {isSmallScreen ? (
           <div className="hamburger-icon">
-            <img
-              className="logo"
-              src="/assets/FS-LOGO.png"
-              alt="Freestyle Dojo Logo"
-            />
+            <i className="fa fa-bars" aria-hidden="true"></i>
           </div>
         ) : (
           <LinkRouter className="logo" to="/">

@@ -189,23 +189,28 @@ body {
   }
 }
 .hours-phone-visit {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   bottom: 0;
   background-color: var(--background); /* Use your primary color here */
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 
 .schedule-column {
-  flex: 1;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  /* flex: 1; 
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100%; */
 }
 
 .info-section {
   display: flex;
-  justify-content: space-evenly;
-  width: 75%; /* Adjust width to take full width on small screens */
+  justify-content: space-around;
+  width: 100%; /* Adjust width to take full width on small screens */
   vertical-align: middle;
   align-content: flex-start;
   margin-right: auto;
@@ -225,12 +230,13 @@ body {
 }
 
 .info-item {
+  flex: 1;
   position: relative;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  width: 30%; /* Full width on small screens */
-  display: flex;
-  flex-direction: column;
+  /* margin-bottom: 20px;
+  margin-top: 10px; */
+  /* width: 30%; Full width on small screens */
+  /* display: flex; */
+  /* flex-direction: column; */
   align-items: center;
   text-align: center; /* Center text */
 }
@@ -258,13 +264,12 @@ p.info-text {
   min-width: max-content;
 }
 #programs {
-  width: 100%;
+  width: 80%;
+  display: inline;
+  justify-content: center;
   bottom: 0;
-  background-color: #f1ede1;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   text-align: center;
-  padding-block: 20px;
-  padding-right: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -295,12 +300,14 @@ p.info-text {
   color: #ce4b2c;
   font-size: 2rem;
   margin: 0;
+  background-color: #f1ede1;
 }
 
 #programs h3 {
   color: black;
   font-size: 1.75rem;
   margin: 0;
+  background-color: #f1ede1;
 }
 
 .program-text {
@@ -363,8 +370,11 @@ p.info-text {
   transform: translateX(-50%) rotate(-45deg); /* Rotate line to form the other side of the X */
 }
 /* Hide the menu items by default for smaller screens */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .menus .menu-list {
+    display: none;
+  }
+  .menu-item.button {
     display: none;
   }
   .menus .hamburger-button {
@@ -377,8 +387,23 @@ p.info-text {
   #programs h3 {
     font-size: 0.75rem;
   }
+  .programs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .program-item {
     height: 100px;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .program-item-link {
+    width: 90%;
+  }
+  .program-item img{
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -455,10 +480,15 @@ p.info-text {
   }
   .button-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
   }
-
+  @media (min-width: 600px) { /* Adjust the breakpoint as needed */
+    .button-container {
+      flex-direction: row; /* Align buttons horizontally on larger screens */
+    }
+  }
   /* Styles for ActionButton */
   .action-button {
     background-color: var(--ni5); /* Background color */
