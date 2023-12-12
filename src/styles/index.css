@@ -623,7 +623,7 @@ footer {
 }
 .footer-address {
   text-align: center;
-  flex-basis: 40%;
+  /* flex-basis: 40%; */
   line-height: 1;
 }
 .link {
