@@ -26,12 +26,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
 .background-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 500px;
-  width: 100vw;
 }
 /* Header Styles */
 .custom-header {
@@ -405,9 +405,9 @@ p.info-text {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  .program-item-link {
+  /* .program-item-link {
     width: 90%;
-  }
+  } */
   .program-item img{
     width: 100%;
     height: auto;
