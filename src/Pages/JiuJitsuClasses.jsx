@@ -1,5 +1,6 @@
 import TwoPartSection from "../Sections/TwoColumns";
 import Layout from "../Layout";
+import  { useEffect } from 'react';
 
 const JiuJitsuClassesPage = () => {
      // Define page-specific properties for the Top component
@@ -11,6 +12,9 @@ const JiuJitsuClassesPage = () => {
         { label: "book a class", action: "/book-a-class" },
       ],
     };
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <Layout topProps={topProps}>
       <TwoPartSection

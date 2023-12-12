@@ -1,7 +1,7 @@
 
 import Layout from '../Layout'; // Import the Layout component
 import TwoPartSection from "../Sections/TwoColumns";
-
+import  { useEffect } from 'react';
 const KidsClassesPage = () => {
    // Define page-specific properties for the Top component
    const topProps = {
@@ -12,7 +12,10 @@ const KidsClassesPage = () => {
         { label: "free trial class", action: "/contact-free-trial-class" },
     ],
   };
-
+  useEffect(() => {
+    // Scrolls to the top of the page on component mount
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Layout topProps={topProps}>
       <TwoPartSection
