@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import Background from '../Background/Background';
 import Header from '../Header/Header';
 import  { useEffect, useState } from 'react';
-import '../styles/HolidaySpecial.css'
+import '../styles/holidayspecial.css'
 const HolidaySpecialPage = () => {
    // Define page-specific properties for the Top component
    const topProps = {
