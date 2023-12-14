@@ -85,7 +85,7 @@ const HolidaySpecialPage = () => {
     <section>
     <h2 className='owner'>Freestyle Dojo Owner and Instructor Mike Romano</h2>
     <div className="special-video-content">
-     <iframe className="special-video" src="https://www.youtube.com/embed/mNyVhXoWGQQ?autoplay=1" frameBorder="0" 
+     <iframe className="special-video" src="https://www.youtube.com/embed/mNyVhXoWGQQ?autoplay=1&mute=1" frameBorder="0" 
       width="560" height="315" autoPlay allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
       {/*<iframe src="https://streamable.com/e/e2nfzs?autoplay=1" frameBorder="0" width="600px" height="480px" allowFullScreen allow="autoplay"></iframe>      
       */}</div>
