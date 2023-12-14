@@ -9,7 +9,7 @@ const HolidaySpecialPage = () => {
    const topProps = {
     bgImage: "/assets/kids-mma-class-toronto-scaled.jpg",
     title: "EMPOWER YOUR KID IN 2024",
-    subtitle: "HOLIDAY 20% OFF JIU JITSU CLASSES",
+    subtitle: "20% OFF JIU JITSU CLASSES THIS HOLIDAY SEASON",
     buttons: [
         { label: "free trial class", action: "/contact-free-trial-class" },
     ],
@@ -85,10 +85,10 @@ const HolidaySpecialPage = () => {
     <section>
     <h2 className='owner'>Freestyle Dojo Owner and Instructor Mike Romano</h2>
     <div className="special-video-content">
-     {/*<iframe className="special-video" src="https://www.youtube.com/embed/mNyVhXoWGQQ" frameBorder="0" 
+     <iframe className="special-video" src="https://www.youtube.com/embed/mNyVhXoWGQQ" frameBorder="0" 
       width="560" height="315" autoPlay allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-      */}<iframe src="https://streamable.com/e/e2nfzs?autoplay=1" frameBorder="0" width="600px" height="480px" allowFullScreen allow="autoplay"></iframe>      
-      </div>
+      {/*<iframe src="https://streamable.com/e/e2nfzs?autoplay=1" frameBorder="0" width="600px" height="480px" allowFullScreen allow="autoplay"></iframe>      
+      */}</div>
       </section>
       <section>
         <h2 className='owner'>Get Your Free 2 Months + 1 Week Trial Today</h2>
