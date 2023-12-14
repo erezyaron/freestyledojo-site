@@ -261,7 +261,7 @@ const HolidaySpecialPage = () => {
               <span className='conditions-list-text'>Freestyle Dojo reserves the right to refuse or cancel subscriptions at its sole discretion.</span>
           </li>
           <li className='conditions-list-item'>
-              <span className='conditions-list-text'>This offer is availabile to first 10 subscribers and may be withdrawn at any time without notice.</span>
+              <span className='conditions-list-text'>This offer is availabile to first 20 subscribers and may be withdrawn at any time without notice.</span>
           </li>
         </ul>
       </div>
