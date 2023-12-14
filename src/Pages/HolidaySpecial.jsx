@@ -222,7 +222,7 @@ const HolidaySpecialPage = () => {
               <span className='conditions-list-text'>All new students receive a one-week trial period.</span>
           </li>
           <li className='conditions-list-item'>
-              <span className='conditions-list-text'>The trial period begins on the date of the child's first class.</span>
+              <span className='conditions-list-text'>The trial period begins on the date of the child&apos;s first class.</span>
           </li>
           <li className='conditions-list-item'>
               <span className='conditions-list-text'>If the child is not satisfied with the program after the first week, a full refund (minus any processing fees) will be issued upon request within 7 days of the first class.</span>
@@ -255,7 +255,7 @@ const HolidaySpecialPage = () => {
         <strong>5. Additional Conditions</strong>
         <ul className='conditions-bullet-section'>
           <li className='conditions-list-item'>
-              <span className='conditions-list-text'>All participants must comply with Freestyle Dojo's policies and procedures, including safety guidelines and attendance expectations.</span>
+              <span className='conditions-list-text'>All participants must comply with Freestyle Dojo&apos;s policies and procedures, including safety guidelines and attendance expectations.</span>
           </li>
           <li className='conditions-list-item'>
               <span className='conditions-list-text'>Freestyle Dojo reserves the right to refuse or cancel subscriptions at its sole discretion.</span>
