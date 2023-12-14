@@ -91,14 +91,20 @@ const HolidaySpecialPage = () => {
       */}</div>
       </section>
       <section>
-        <h2 className='owner'>Get Your Free 2 Months + 1 Week Trial Today</h2>
+        <h2 className='owner'>Get 2 Months Free + 1 Week Trial Today</h2>
         <div className='center-bullets'>
         <ul className='special-bullet-section'>
           <li className='special-list-item'>
               <span className='trial-list-icon'>
                   <i className='fa-solid fa-angle-right'></i>
               </span>
-              <span className='special-list-text'>Save $270 CAD by paying $1080 CAD instead of $1350 CAD for annual subscription.</span>
+              <span className='special-list-text'>Save $270 CAD on an annual subscription.</span>
+          </li>
+          <li className='special-list-item'>
+              <span className='trial-list-icon'>
+                  <i className='fa-solid fa-angle-right'></i>
+              </span>
+              <span className='special-list-text'>Pay only $1080 CAD for a year of friends, fun, and martial arts.</span>
           </li>
           <li className='special-list-item'>
               <span className='trial-list-icon'>
