@@ -9,9 +9,16 @@ import AboutOurCoachesPage from './Pages/AboutOurCoaches'
 import GymRentalsPage from './Pages/GymRentalsPage'
 import BookAClassPage from './Pages/BookAClass'
 import ClassSchedulePage from './Pages/ClassSchedule'
- 
-function App() {
+import HolidaySpecialPage from './Pages/HolidaySpecial'
+import { useEffect } from 'react'
 
+function App() {
+console.log(location.pathname)
+useEffect(() => {
+  if(window.location.pathname !== '/' && window.location.hash === ''){
+    window.location.replace(`/#${window.location.pathname}`);
+  }
+}, []);
   return (
     <Router>
       <Routes>
@@ -28,6 +35,7 @@ function App() {
         <Route path="/contact-free-trial-class" element={<HomePage />} />
         <Route path="/book-a-class" element={<BookAClassPage />} />
         <Route path="/schedule" element={<ClassSchedulePage />} />
+        <Route path="/holidayspecial" element={<HolidaySpecialPage />} />
       </Routes>
     </Router>
   )
