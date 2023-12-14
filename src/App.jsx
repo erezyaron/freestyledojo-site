@@ -36,6 +36,7 @@ useEffect(() => {
         <Route path="/book-a-class" element={<BookAClassPage />} />
         <Route path="/schedule" element={<ClassSchedulePage />} />
         <Route path="/holidayspecial" element={<HolidaySpecialPage />} />
+        <Route path="/holidayoffer" element={<HolidaySpecialPage />} />
       </Routes>
     </Router>
   )
