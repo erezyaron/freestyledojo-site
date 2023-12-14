@@ -243,10 +243,13 @@ const HolidaySpecialPage = () => {
               <span className='conditions-list-text'>The annual subscription period is 12 months, starting on the date of enrollment.</span>
           </li>
           <li className='conditions-list-item'>
-              <span className='conditions-list-text'>Subscription fees are automatically charged monthly to the provided payment method.</span>
+              <span className='conditions-list-text'>Subscription fees are charged upfront for the year.</span>
           </li>
           <li className='conditions-list-item'>
-              <span className='conditions-list-text'>The discounted annual subscription price is valid for the initial year only. Standard renewal rates will apply for subsequent years.</span>
+              <span className='conditions-list-text'>The discounted annual subscription price is valid for the initial year only.</span>
+          </li>
+          <li className='conditions-list-item'>
+              <span className='conditions-list-text'>Standard renewal terms and rates will apply for subsequent years.</span>
           </li>
           <li className='conditions-list-item'>
               <span className='conditions-list-text'>Freestyle Dojo reserves the right to modify or cancel the subscription program at any time with reasonable notice.</span>
