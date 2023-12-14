@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 import emailjs from "emailjs-com";
 import Background from '../Background/Background';
 import Header from '../Header/Header';
@@ -104,7 +104,7 @@ const HolidaySpecialPage = () => {
               <span className='trial-list-icon'>
                   <i className='fa-solid fa-angle-right'></i>
               </span>
-              <span className='special-list-text'>If your child doesn't absolutely love the class, you will get a full refund if requested within the first week.</span>
+              <span className='special-list-text'>If your child doesn&apos;t absolutely love the class, you will get a full refund if requested within the first week.</span>
           </li>
         </ul>
         </div>
