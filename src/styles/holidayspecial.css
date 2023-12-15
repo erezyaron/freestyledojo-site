@@ -224,6 +224,7 @@ body {place-items: unset;}
     font-weight: 500;
     text-transform: uppercase;
     max-width: fit-content;
+    width: unset;
 
     &:hover {
       background-color: wheat; /* Change color on hover */

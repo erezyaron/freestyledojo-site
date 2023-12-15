@@ -117,8 +117,9 @@ const HolidaySpecialPage = () => {
       </section>
       <section>
         <div className="center-bullets">
+          
           <button className="center-button" onClick={toggleEnrollForm}>
-          You convinced me. I want to sign up my kid asap.
+            Enroll
           </button>
           {isEnrollVisible && (
             <div id="subscribe-form" className="subscribe-form">
