@@ -94,9 +94,9 @@ const Menus = () => {
               <li>
                 <LinkRouter to="/prices">Prices</LinkRouter>
               </li>
-              {/* <li>
+              <li>
                 <LinkRouter to="/facilities">Facilities</LinkRouter>
-              </li> */}
+              </li>
               <li>
                 <LinkRouter to="/events">Events</LinkRouter>
               </li>
