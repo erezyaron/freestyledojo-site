@@ -230,7 +230,7 @@ body {
 div.priceImage {
   position: absolute;
   right: 10px;
-  top: 50px
+  top: 50px;
 }
 
 .priceImage {
@@ -239,7 +239,7 @@ div.priceImage {
   cursor: pointer transition: transform 0.2s ease-in-out;
 
   @media (max-width: 768px) {
-    width: 50px;
+    width: 80px;
     /* Adjusted width for smaller screens */
     order: 2;
   }

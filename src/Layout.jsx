@@ -54,13 +54,13 @@ const Layout = ({ children, topProps }) => {
           <div className="footer-address">
             <h3>FREESTYLE DOJO</h3>
             <a className="link" href="https://goo.gl/maps/sbaAUU82DKgeaX3L8">
-            <i className="fas fa-map-marker-alt"></i>
+              <i className="fas fa-map-marker-alt"></i>
               &nbsp;191 Geary Avenue, Toronto, ON M6H2C1
-            </a><br/>
+            </a><br />
             <a href="tel:647-245-8829" className="link">
-            <i className="fas fa-phone"></i>
+              <i className="fas fa-phone"></i>
               &nbsp;647-245-8829
-            </a><br/>
+            </a><br />
             <Link className="footer button" to="/contact-free-trial-class">
               FREE TRIAL CLASS
             </Link>
@@ -87,7 +87,7 @@ const Layout = ({ children, topProps }) => {
               </li>
               <li className="footer-list-item">
                 <Link className="link" to="/programs">
-                  Progarms
+                  Programs
                 </Link>
               </li>
               <li className="footer-list-item">
