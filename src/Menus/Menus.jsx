@@ -6,11 +6,11 @@ const Menus = () => {
 
   // Dynamically set the initial value of isMenuOpen based on isSmallScreen
   const [isMenuOpen, setIsMenuOpen] = useState(!isSmallScreen);
-  
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  
+
   // Listen for window resize events to update isSmallScreen
   useEffect(() => {
     const handleResize = () => {
@@ -18,23 +18,23 @@ const Menus = () => {
       setIsSmallScreen(newIsSmallScreen);
       setIsMenuOpen(!newIsSmallScreen);
     };
-  
+
     // Attach the event listener when the component mounts
     window.addEventListener("resize", handleResize);
-  
+
     // Remove the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
+
   return (
     <nav className="menus">
       {isSmallScreen && (
         <div className="left-side-image">
-            <LinkRouter to="/">
+          <LinkRouter to="/">
             <img className="logo" src="/assets/FS-LOGO.png" alt="Freestyle Dojo Logo" />
-            </LinkRouter>
+          </LinkRouter>
         </div>
       )}
       <div className="logo" onClick={toggleMenu}>
@@ -67,7 +67,7 @@ const Menus = () => {
             <LinkRouter to="/programs">Programs</LinkRouter>
             {/* Dropdown for "Programs" menu */}
             <ul className="submenu">
-            <li>
+              <li>
                 <LinkRouter to="/toronto-jiu-jitsu-classes">Jiu Jitsu</LinkRouter>
               </li>
               <li>
@@ -83,8 +83,13 @@ const Menus = () => {
           </li>
           <li className="menu-item">
             <LinkRouter to="/about-our-coaches">About</LinkRouter>
-            {/* Dropdown for "About" menu */}
             <ul className="submenu">
+              <li>
+                <LinkRouter to="/prices">Prices</LinkRouter>
+              </li>
+              {/* <li>
+                <LinkRouter to="/facilities">Facilities</LinkRouter>
+              </li> */}
               <li>
                 <LinkRouter to="/events">Events</LinkRouter>
               </li>

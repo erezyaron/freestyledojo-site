@@ -11,19 +11,23 @@ import BookAClassPage from './Pages/BookAClass'
 import ClassSchedulePage from './Pages/ClassSchedule'
 import HolidaySpecialPage from './Pages/HolidaySpecial'
 import { useEffect } from 'react'
+import PricesPage from './Pages/PricesPage'
+import FacilitiesPage from './Pages/FacilitiesPage'
 
 function App() {
-console.log(location.pathname)
-useEffect(() => {
-  if(window.location.pathname !== '/' && window.location.hash === ''){
-    window.location.replace(`/#${window.location.pathname}`);
-  }
-}, []);
+  console.log(location.pathname)
+  useEffect(() => {
+    if (window.location.pathname !== '/' && window.location.hash === '') {
+      window.location.replace(`/#${window.location.pathname}`);
+    }
+  }, []);
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
+        <Route path="/prices" element={<PricesPage />} />
+        <Route path="/facilities" element={<FacilitiesPage />} />
         <Route path="/programs" element={<HomePage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/toronto-jiu-jitsu-classes" element={<JiuJitsuClassesPage />} />
