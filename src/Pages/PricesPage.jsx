@@ -21,7 +21,7 @@ const PricesPage = () => {
     ],
     kids: [
       { period: "3 months", price: "$375" },
-      { period: "6 months", price: "$750" },
+      { period: "6 months", price: "$700" },
       { period: "12 months", price: "$1350" }
     ],
     passes: [
