@@ -6,14 +6,29 @@ const WeeklyCalendar = () => {
   const [selectedTags, setSelectedTags] = useState(new Set());
   const [uniqueTags, setUniqueTags] = useState([]);
   const [filteredClasses, setFilteredClasses] = useState(calendarData); // Initialize with all classes
+  const [activeTooltip, setActiveTooltip] = useState(null);
+
+  const handleTooltipClick = (index) => {
+    setActiveTooltip(index === activeTooltip ? null : index);
+  };
+
+  const Tooltip = ({ children, text, isVisible, onClick }) => {
+    return (
+      <div onClick={onClick}>
+        {children}
+        {isVisible && <div className="tooltip">{text}</div>}
+      </div>
+    );
+  };
+
 
   useEffect(() => {
     const tags = new Set();
     Object.values(calendarData).forEach(dayEvents => {
-        dayEvents.forEach(event => {
-          event.tags.forEach(tag => tags.add(tag));
-        });
+      dayEvents.forEach(event => {
+        event.tags.forEach(tag => tags.add(tag));
       });
+    });
     setUniqueTags([...tags]);
   }, []);
 
@@ -43,20 +58,20 @@ const WeeklyCalendar = () => {
     <>
       <div className="filter-container">
         {uniqueTags.map((tag, index) => (
-            index % 3 === 0 && (
-                <div key={tag} className="tag-column">
-                    {uniqueTags.slice(index, index+3).map(tag => (
-          <label key={tag}>
-          <input
-            type="checkbox"
-            checked={selectedTags.has(tag)}
-            onChange={() => toggleTag(tag)}
-            />
-            {tag}
-        </label>
-                    ))}
-</div>)
-))}
+          index % 3 === 0 && (
+            <div key={tag} className="tag-column">
+              {uniqueTags.slice(index, index + 3).map(tag => (
+                <label key={tag}>
+                  <input
+                    type="checkbox"
+                    checked={selectedTags.has(tag)}
+                    onChange={() => toggleTag(tag)}
+                  />
+                  {tag}
+                </label>
+              ))}
+            </div>)
+        ))}
       </div>
       <div className="schedule-container">
         {Object.entries(filteredClasses).map(([day, classes]) => (
@@ -66,16 +81,19 @@ const WeeklyCalendar = () => {
               <div
                 key={index}
                 className="class-entry"
-                title={classItem.description}
               >
-                <h4>{classItem.title}</h4>
-                <div className="subtitle">{classItem.subtitle}</div>
-                {classItem.startTime && classItem.endTime && (
-                  <p>
-                    {classItem.startTime} - {classItem.endTime}
-                  </p>
-                )}
-                {/* Additional details */}
+                <Tooltip text={classItem.description} isVisible={activeTooltip === (day + index)}
+                  onClick={() => handleTooltipClick(day + index)}>
+                  <h4>{classItem.title}</h4>
+                  <div className="subtitle">{classItem.subtitle}</div>
+                  {classItem.startTime && classItem.endTime && (
+                    <p>
+                      {classItem.startTime} - {classItem.endTime}
+                    </p>
+                  )}
+
+                  {/* Additional details */}
+                </Tooltip>
               </div>
             ))}
           </div>

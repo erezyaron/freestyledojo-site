@@ -84,3 +84,12 @@ label {
     min-width: 250px;
   }
 }
+
+.tooltip {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  /* Additional styles for positioning, animation, etc. */
+}
