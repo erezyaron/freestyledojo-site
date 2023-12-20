@@ -83,6 +83,9 @@ const PricesPage = () => {
                 <tr key="tax">
                   <td>* plus applicable taxes</td>
                 </tr>
+                <tr key="discount">
+                  <td>We also offer family (and couples) discounts</td>
+                </tr>
               </tbody>
             </table>
           </div>
