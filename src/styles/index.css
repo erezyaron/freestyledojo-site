@@ -227,6 +227,24 @@ body {
   }
 }
 
+div.priceImage {
+  position: absolute;
+  right: 10px;
+  top: 50px
+}
+
+.priceImage {
+  width: 200px;
+  height: auto;
+  cursor: pointer transition: transform 0.2s ease-in-out;
+
+  @media (max-width: 768px) {
+    width: 50px;
+    /* Adjusted width for smaller screens */
+    order: 2;
+  }
+}
+
 .hamburger-icon {
   display: none;
   /* Initially hide the hamburger icon */
