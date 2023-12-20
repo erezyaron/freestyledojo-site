@@ -234,9 +234,13 @@ div.priceImage {
 }
 
 .priceImage {
-  width: 200px;
+  width: 350px;
   height: auto;
   cursor: pointer transition: transform 0.2s ease-in-out;
+
+  @media (max-width: 1024px) {
+    width: 180px;
+  }
 
   @media (max-width: 768px) {
     width: 80px;
