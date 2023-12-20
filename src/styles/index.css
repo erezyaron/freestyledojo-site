@@ -554,10 +554,10 @@ p.info-text {
 .widget-wrap {
   display: flex;
   position: relative;
-  width: 69%;
+  width: 65%;
   flex-wrap: wrap;
   align-content: flex-start;
-  left: 66px;
+  /* left: 66px; */
   margin-top: 150px;
   animation: bounceInLeft 1s ease forwards;
 }
@@ -567,10 +567,11 @@ p.info-text {
   flex-direction: column;
   position: absolute;
   top: 50%;
+  left: 50%;
   /* Vertically centered */
   transform: translateY(-50%);
   text-align: center;
-
+  justify-content: center;
   /* Adjust the width and other styles as needed */
 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
