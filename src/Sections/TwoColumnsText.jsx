@@ -11,10 +11,10 @@ const TwoColumnsText = ({ ltitle, lsubtitle, leftText, rtitle, rsubtitle, rightT
   return (
     <>
     <div className='section'>
+    {ltitle && <h3>{ltitle}</h3>}
     <div className="two-part-container">
       <div className="left-container">
         <div className="inner-container">
-        {ltitle && <h3>{ltitle}</h3>}
         {lsubtitle && <h4>{lsubtitle}</h4>}
         {lparagraphs}
         </div>

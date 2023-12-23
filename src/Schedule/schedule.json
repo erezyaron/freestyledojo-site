@@ -1,6 +1,7 @@
 {
   "Monday": [
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "Morning Crew",
       "startTime": "7:00 AM",
@@ -42,6 +43,7 @@
       "description": "A fun action packed hour of martial arts and fitness"
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Beginner Jiu Jitsu",
       "subtitle": "Advanced Basics",
       "startTime": "5:45 PM",
@@ -53,6 +55,7 @@
       "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "All Levels",
       "startTime": "5:45 PM",
@@ -77,6 +80,7 @@
   ],
   "Tuesday": [
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Open Mat Rolls",
       "subtitle": "10-Rounds",
       "startTime": "7:00 AM",
@@ -88,6 +92,7 @@
       "description": "Open mat for rolling. Sparring for 10-rounds, not supervised by an instructor."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Beginner Jiu Jitsu",
       "subtitle": "Advanced Basics",
       "startTime": "6:00 PM",
@@ -99,6 +104,7 @@
       "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Women's Jiu Jitsu",
       "subtitle": "Women exclusive class",
       "startTime": "7:00 PM",
@@ -110,6 +116,7 @@
       "description": "A class for all practitioners, all levels are welcome. Consisting of drills, live drills, and sparring."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "All Levels",
       "startTime": "7:30 PM",
@@ -123,6 +130,7 @@
   ],
   "Wednesday": [
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "Morning Crew",
       "startTime": "7:00 AM",
@@ -164,6 +172,7 @@
       "description": "A fun action packed hour of martial arts and fitness"
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Beginner Jiu Jitsu",
       "subtitle": "Advanced Basics",
       "startTime": "5:45 PM",
@@ -175,6 +184,7 @@
       "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "All Levels",
       "startTime": "5:45 PM",
@@ -199,6 +209,7 @@
   ],
   "Thursday": [
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Freestyle Session",
       "subtitle": "Any Questions?",
       "startTime": "7:00 AM",
@@ -210,6 +221,7 @@
       "description": "Freestyle Session let you work on what you want. Ask questions, drill, situationals, improve your game in small and individualized fashion."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Beginner Jiu Jitsu",
       "subtitle": "Advanced Basics",
       "startTime": "6:00 PM",
@@ -221,6 +233,7 @@
       "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Freestyle Session",
       "subtitle": "Open Mat Rolling",
       "startTime": "7:30 PM",
@@ -234,6 +247,7 @@
   ],
   "Friday": [
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "Morning Crew",
       "startTime": "7:00 AM",
@@ -275,6 +289,7 @@
       "description": "A fun action packed hour of martial arts and fitness"
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Beginner Jiu Jitsu",
       "subtitle": "Advanced Basics",
       "startTime": "5:45 PM",
@@ -286,6 +301,7 @@
       "description": "Our beginner program is based off Firas Zahabi's Advanced Basics program. This curriculum was created by one of the worlds most renowned JiuJitsu/MMA coaches to ensure you learn the essential concepts and techniques as a brand new student."
     },
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "All Levels",
       "startTime": "5:45 PM",
@@ -310,6 +326,7 @@
   ],
   "Saturday": [
     {
+      "link": "/toronto-jiu-jitsu-classes",
       "title": "Jiu Jitsu",
       "subtitle": "All Levels",
       "startTime": "12:00 PM",
