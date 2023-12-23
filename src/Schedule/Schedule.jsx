@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import calendarData from "./schedule.json";
 import "./schedule.css";
+import { Link as LinkRouter } from "react-router-dom";
 
 const WeeklyCalendar = () => {
   const [selectedTags, setSelectedTags] = useState(new Set());
@@ -12,14 +13,19 @@ const WeeklyCalendar = () => {
     setActiveTooltip(index === activeTooltip ? null : index);
   };
 
-  const Tooltip = ({ children, text, isVisible, onClick }) => {
+  const Tooltip = ({ children, text, link, isVisible, onClick }) => {
     return (
       <div onClick={onClick}>
         {children}
-        {isVisible && <div className="tooltip">{text}</div>}
+        {isVisible && (
+          <div className="tooltip">
+            {text}
+            {link && <><br/><LinkRouter className="tooltip-link" to={link}>More Info</LinkRouter></>}
+          </div>
+        )}
       </div>
     );
-  };
+      };
 
 
   useEffect(() => {
@@ -82,7 +88,7 @@ const WeeklyCalendar = () => {
                 key={index}
                 className="class-entry"
               >
-                <Tooltip text={classItem.description} isVisible={activeTooltip === (day + index)}
+                <Tooltip link={classItem.link} text={classItem.description} isVisible={activeTooltip === (day + index)}
                   onClick={() => handleTooltipClick(day + index)}>
                   <h4>{classItem.title}</h4>
                   <div className="subtitle">{classItem.subtitle}</div>

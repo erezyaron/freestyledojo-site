@@ -10,6 +10,7 @@ const KidsClassesPage = () => {
     subtitle: "Kids Martial Arts Program IN Toronto",
     buttons: [
         { label: "free trial class", action: "/contact-free-trial-class" },
+        { label: "Holiday Special", action: "/holidayspecial" },
     ],
   };
   useEffect(() => {
