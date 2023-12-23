@@ -36,6 +36,7 @@
   position: relative;
   min-height: 1px;
   margin: 30px;
+
 }
 
 .inner-container {
@@ -203,6 +204,10 @@ button {
     padding: 0;
     width: unset;
     max-width: 75%;
+  }
+  .left-container img {
+    width: 100% !important;
+    padding-left: 0;
   }
 
   .left-container h3,

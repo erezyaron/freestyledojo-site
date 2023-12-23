@@ -16,6 +16,7 @@ const MapPage = () => {
   return (
     <Layout topProps={topProps}>
      <TwoPartSection
+        reversed={true}
         imageUrl="/assets/map.png"
         imageAlt="Come find us at Dufferin and Dupont area"
         title="Discover Freestyle Dojo in the Heart of Toronto's West End"
