@@ -1,0 +1,20 @@
+.text-two-columns {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-column, .right-column {
+    margin: 10px;
+  }
+  
+  @media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .text-two-columns {
+      flex-direction: row;
+    }
+  
+    .left-column, .right-column {
+      flex: 1;
+      padding: 10px;
+    }
+  }
+  
