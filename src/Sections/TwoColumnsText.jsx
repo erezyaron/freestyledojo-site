@@ -1,4 +1,4 @@
-const TwoColumnsText = ({ ltitle, lsubtitle, leftText, rtitle, rsubtitle, rightText }) => {
+const TwoColumnsText = ({ ltitle, lsubtitle, leftText, rtitle, rsubtitle, rightText, centered }) => {
     const lparagraphs = leftText
     .split("\\n")
     .map((item, i) => <p key={i}>{item}</p>);

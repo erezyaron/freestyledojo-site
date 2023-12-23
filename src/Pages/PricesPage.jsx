@@ -33,6 +33,39 @@ const PricesPage = () => {
 
   return (
     <Layout topProps={topProps}>
+    <div className='section'><br />
+    <h3>toronto no gi classes</h3>
+    <div className="two-part-container">
+    <div className="left-container centered">
+        <div className="inner-container centered">
+          <h4>adults</h4>
+          <p className='centered'>Week - $40</p>
+          <p className='centered'>Month - $160</p>
+          <p className='centered'>Year (10% off) - $1728</p>
+        </div>
+      </div>
+      <div className="middle-container">
+        <div className="inner-container">
+          <h4>kids</h4>
+          <p className='centered'>3 Months - $375</p>
+          <p className='centered'>6 Months - $700</p>
+          <p className='centered'>12 Months - $1350</p>
+        </div>
+      </div>
+      <div className="right-container">
+        <div className="inner-container">
+          <h4>passes</h4>
+          <p className='centered'>Class Pass - $20</p>
+          <p className='centered'>10 Classes - $180</p>
+          <p className='centered'>20 Classes - $350</p>
+        </div>
+      </div>
+    </div>
+    <p className='centered'>We also offer family (and couples) discounts</p>
+    <p className='centered'>* plus applicable taxes</p>
+    </div>
+
+                
       <TwoPartSection
         imageUrl="/assets/FS-LOGO.png"
         imageAlt="Freestyle Dojo - lowest prices in Toronto"
@@ -58,41 +91,6 @@ const PricesPage = () => {
         buttonText=""
         buttonLink=""
       />
-
-      <div className="prices-section">
-        <div className="price-header-content">
-          <h2>TORONTO NO GI CLASSES</h2>
-        </div>
-        <div className='main-content'>
-          <div className='price-text-content'>
-            <table className='pricing-table'>
-              <tbody>
-                {Object.entries(data).map(([category, items]) => (
-                  <>
-                    <tr key={category}>
-                      <th>{category.toUpperCase()}</th>
-                    </tr>
-                    {items.map(item => (
-                      <tr key={item.period}>
-                        <td>{item.period} - {item.price}</td>
-                      </tr>
-                    ))}
-                  </>
-                ))}
-                <tr key="divider"><td>&nbsp;</td></tr>
-                <tr key="tax">
-                  <td>* plus applicable taxes</td>
-                </tr>
-                <tr key="discount">
-                  <td>We also offer family (and couples) discounts</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-
       <TwoPartSection
         reversed={true}
         imageUrl="/assets/FS-LOGO.png"

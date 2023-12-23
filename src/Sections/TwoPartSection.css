@@ -16,8 +16,7 @@
   /* Adjust the space between the columns */
   color: white;
   max-width: 1140px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   position: relative;
 }
 .section h3 {text-align: center; color: var(--ni5); margin: 0;
@@ -48,7 +47,14 @@
   width: 100%;
   flex-wrap: wrap;
 }
-
+.middle-container{
+  flex: 1;
+  order: 2;
+  max-width: 50%;
+  position: relative;
+  min-height: 1px;
+  margin: 30px;
+}
 .right-container {
   flex: 1;
   order: 2;
@@ -70,7 +76,7 @@
   margin: 0;
 }
 
-.left-container h4,
+.left-container h4, .middle-container h4,
 .right-container h4 {
   color: black;
   font-size: 1.75rem;
@@ -84,7 +90,7 @@
   margin-bottom: 20px;
 }
 
-.left-container p,
+.left-container p,.middle-container p,
 .right-container p {
   text-align: left;
   margin-block-end: 0px;
@@ -93,7 +99,17 @@
   font-family: "Rubik";
   font-weight: 400;
 }
-
+.centered {
+  text-align: center !important;
+}
+.section p {
+  text-align: left;
+  margin-block-end: 0px;
+  margin-bottom: 0px;
+  color: #1d1d1d;
+  font-family: "Rubik";
+  font-weight: 400;
+}
 .inner-container {
   display: block;
   width: 100%;
@@ -196,7 +212,7 @@ button {
     width: 100%;
   }
 
-  .left-container,
+  .left-container,.middle-container,
   .right-container {
     order: unset;
     flex: unset;
@@ -212,6 +228,8 @@ button {
 
   .left-container h3,
   .left-container h4,
+  .middle-container h3,
+  .middle-container h4,
   .right-container h3,
   .right-container h4 {
     width: unset;
