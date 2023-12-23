@@ -27,7 +27,7 @@ const Layout = ({ children, topProps }) => {
                 <i className="fab fa-facebook"></i>
               </a>
               <a
-                href="https://goo.gl/maps/sbaAUU82DKgeaX3L8"
+                href="/#/map"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,7 +53,7 @@ const Layout = ({ children, topProps }) => {
         <div className="footer-center">
           <div className="footer-address">
             <h3>FREESTYLE DOJO</h3>
-            <a className="link" href="https://goo.gl/maps/sbaAUU82DKgeaX3L8">
+            <a className="link" href="/#/map">
               <i className="fas fa-map-marker-alt"></i>
               &nbsp;191 Geary Avenue, Toronto, ON M6H2C1
             </a><br />
