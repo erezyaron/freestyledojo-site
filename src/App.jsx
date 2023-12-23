@@ -13,6 +13,7 @@ import HolidaySpecialPage from './Pages/HolidaySpecial'
 import { useEffect } from 'react'
 import PricesPage from './Pages/PricesPage'
 import FacilitiesPage from './Pages/FacilitiesPage'
+import MapPage from './Pages/MapPage'
 
 function App() {
   console.log(location.pathname)
@@ -41,6 +42,7 @@ function App() {
         <Route path="/schedule" element={<ClassSchedulePage />} />
         <Route path="/holidayspecial" element={<HolidaySpecialPage />} />
         <Route path="/holidayoffer" element={<HolidaySpecialPage />} />
+        <Route path="/map" element={<MapPage />} />
       </Routes>
     </Router>
   )

@@ -1,5 +1,3 @@
-import './TwoColumnsText.css'; // Assuming you have a corresponding CSS file for styling
-
 const TwoColumnsText = ({ ltitle, lsubtitle, leftText, rtitle, rsubtitle, rightText }) => {
     const lparagraphs = leftText
     .split("\\n")

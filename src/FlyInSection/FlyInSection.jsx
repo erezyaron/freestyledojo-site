@@ -16,7 +16,7 @@ const FlyInSection = ({ title, subtitle, buttons }) => {
             {
             (buttons.length > 0) &&
               buttons.map((button,index) => (
-              <ActionButton key={index} label={button.label} to={button.action} />
+              <ActionButton key={index} label={button.label} to={button.action} newwindow={button.newwindow} />
            ))
           }
         

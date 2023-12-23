@@ -236,7 +236,8 @@ div.priceImage {
 .priceImage {
   width: 350px;
   height: auto;
-  cursor: pointer transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+   transition: transform 0.2s ease-in-out;
 
   @media (max-width: 1024px) {
     width: 180px;
@@ -818,7 +819,7 @@ footer {
   background-color: #f1ede1;
 }
 
-.price-header-content,
+.price-header-content
 {
 color: black;
 text-align: center;
