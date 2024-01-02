@@ -199,7 +199,7 @@ const HolidaySpecialPage = () => {
               <span className='conditions-list-text'>Must be residents of Ontario, Canada.</span>
           </li>
           <li className='conditions-list-item'>
-              <span className='conditions-list-text'>Limited-time offer valid until December 31, 2023. Subscriptions must be signed up for and paid for by December 31th to qualify for the discount.</span>
+              <span className='conditions-list-text'>Limited-time offer valid until January 31, 2024. Subscriptions must be signed up for and paid for by January 31th to qualify for the discount.</span>
           </li>
         </ul>
         <strong>2. Discount</strong>
