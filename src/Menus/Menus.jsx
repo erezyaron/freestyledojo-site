@@ -52,13 +52,6 @@ const Menus = () => {
           </LinkRouter>
         )}
       </div>
-      <div className="priceImage">
-        <LinkRouter className="priceImage" to="/prices">
-          <img className="priceImage"
-            src="/assets/160month.png"
-            alt="Freestyle Dojo - membership is only $160 plus tax per month" />
-        </LinkRouter>
-      </div>
       {isMenuOpen && (
         <ul className={`menu-list ${isMenuOpen ? 'show' : ''}`}>
           <li className="menu-item">

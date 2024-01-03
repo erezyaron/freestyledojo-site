@@ -17,7 +17,6 @@ const HomePage = () => {
     title: "MMA & Jiu Jitsu Classes",
     subtitle: "an innovative martial arts gym in toronto",
     buttons: [
-      { label: "free trial class", action: "/contact-free-trial-class" },
       { label: "seminars", action: "/events" },
       { label: "book a class", action: "/book-a-class" },
     ],
@@ -34,8 +33,8 @@ const HomePage = () => {
   }, [location]);
   return (
     <Layout topProps={topProps}>
-      <HoursPhoneVisit />
-      <Programs />
+      
+      
       <TwoPartSection
         imageUrl="/assets/toronto-martial-arts-classes-scaled.jpg"
         imageAlt="MMA classes are available"
