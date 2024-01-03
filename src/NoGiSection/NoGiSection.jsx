@@ -31,7 +31,7 @@ const NoGiSection = () => {
       <div className="video-content">
       <iframe
           className="no-gi-video"
-          src="https://streamable.com/e/s0rwcx?autoplay=1&amp;loop=0"
+          src="https://streamable.com/e/s0rwcx?autoplay=0&amp;loop=0"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

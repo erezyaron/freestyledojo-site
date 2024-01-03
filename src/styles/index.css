@@ -618,7 +618,7 @@ p.info-text {
     justify-content: space-evenly;
     width: 100%;
   }
-.inner-button-container { margin-top: 20px;}
+
   @media (min-width: 600px) {
 
     /* Adjust the breakpoint as needed */
