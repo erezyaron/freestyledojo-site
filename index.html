@@ -260,11 +260,15 @@
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
+                document.getElementById('frmSubmit').disabled = true;
                 emailjs.sendForm('freestyle-dojo', 'freestyle-website', this)
                     .then(function () {
                         console.log('SUCCESS!');
+                        document.getElementById('frmSubmit').disabled = false;
+                        document.getElementById('emailMessage').textContent = "Thank you, our team will respond soon.";
                     }, function (error) {
                         console.log('FAILED...', error);
+                        document.getElementById('emailMessage').textContent = "Sorry, there was an error. Please email info@freestyledojo.ca directly for assistance.";
                     });
             });
         }
@@ -684,7 +688,8 @@
                             </select>
                             <textarea name="message" placeholder="Any details you would like to share with our team!"
                                 required></textarea>
-                            <button type="submit">Send</button>
+                            <button type="submit" id="frmSubmit">Send</button>
+                            <p id="emailMessage"></p>
                         </form>
                     </div>
                 </article>
