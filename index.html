@@ -255,6 +255,26 @@
         (function () {
             emailjs.init('dPO6h9ESzHv7JRGxA');
         })();
+        function toggleContent(contentId) {
+            if (contentId == "book-a-class" || contentId == "register") {
+                document.getElementById("main").style.display = "none";
+                document.getElementById("prices").style.display = "none";
+                document.getElementById("schedule").style.display = "none";
+                document.getElementById("about").style.display = "none";
+                document.getElementById("contact").style.display = "none";
+                document.getElementById("book-a-class").style.display = (contentId=="book-a-class"? "block" : "none");
+                document.getElementById("register").style.display = (contentId=="register"? "block" : "none");
+            }
+            else {
+                document.getElementById("main").style.display = "block";
+                document.getElementById("prices").style.display = "block";
+                document.getElementById("schedule").style.display = "block";
+                document.getElementById("about").style.display = "block";
+                document.getElementById("contact").style.display = "block";
+                document.getElementById("book-a-class").style.display = "none";
+                document.getElementById("register").style.display = "none";
+            }
+        }
     </script>
     <script type="text/javascript">
         window.onload = function () {
@@ -288,14 +308,14 @@
     <nav>
         <div>
             <ul>
-                <li style="list-style-type: none"><a href="#prices">Prices</a></li>
-                <li style="list-style-type: none"><a href="#schedule">Schedule</a></li>
-                <li style="list-style-type: none"><a href="#about">About</a></li>
-                <li style="list-style-type: none"><a href="#contact">Contact</a></li>
+                <li style="list-style-type: none"><a onclick="toggleContent('');" href="#prices">Prices</a></li>
+                <li style="list-style-type: none"><a onclick="toggleContent('');" href="#schedule">Schedule</a></li>
+                <li style="list-style-type: none"><a onclick="toggleContent('');" href="#about">About</a></li>
+                <li style="list-style-type: none"><a onclick="toggleContent('');" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <main class="container">
+    <main class="container" id="mainContent">
         <section id="main" aria-label="Freestyle Dojo">
             <article>
                 <div class="grid">
@@ -392,7 +412,8 @@
                         <h2>Our Schedule</h2>
                         <h3>Joining our community offers much more than regular classes</h3>
                     </hgroup>
-                    <p><a href="register.html">Register</a> or <a href="book-a-class.html">book a class</a>, or you can
+                    <p><a href="#" onclick="toggleContent('register');">Register</a> or <a href="#"
+                            onclick="toggleContent('book-a-class');">book a class</a>, or you can
                         always simply stop by 10 minutes before a class starts to do this at the gym.<br />And also
                         remember, the <strong>first class is always free.</strong></p>
                     <div class="schedule-container">
@@ -692,6 +713,34 @@
                             <p id="emailMessage"></p>
                         </form>
                     </div>
+                </article>
+            </div>
+        </section>
+        <section id="book-a-class" style="display:none;">
+            <div class="grid">
+                <article>
+                    <hgroup>
+                        <h2>Book a class at Freestyle Dojo</h2>
+                        <h3>Or simply show up at the dojo 10 minutes before a class starts</h3>
+                    </hgroup>
+                    <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js"
+                        type="text/javascript"></script>
+                    <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="381978700d7d"
+                        data-widget-version="1"></healcode-widget>
+                </article>
+            </div>
+        </section>
+        <section id="register" style="display:none;">
+            <div class="grid">
+                <article>
+                    <hgroup>
+                        <h2>Welcome to Freestyle Dojo</h2>
+                        <h3>Create an account</h3>
+                    </hgroup>
+                    <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js"
+                        type="text/javascript"></script>
+                    <healcode-widget data-type="registrations" data-widget-partner="object"
+                        data-widget-id="381209650d7d" data-widget-version="0"></healcode-widget>
                 </article>
             </div>
         </section>
