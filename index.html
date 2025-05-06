@@ -12,8 +12,7 @@
 
     gtag('config', 'G-CTMW4WQ3Q5');
   </script>
-  <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js"
-  type="text/javascript"></script>
+  <script src="https://widgets.mindbodyonline.com/javascripts/healcode.js" type="text/javascript"></script>
   <script type="text/javascript">
     // (function (c, l, a, r, i, t, y) {
     //   c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
@@ -115,6 +114,15 @@
       margin-right: 15px;
     }
 
+    a.healcode-link {
+      background-color: #457b9d;
+      color: white;
+      margin-top: 0.5em;
+      padding: 0.5em 1em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
     #summercamp table {
       margin-left: auto;
       margin-right: auto;
@@ -140,7 +148,7 @@
       border-top: none;
       border-bottom: none;
       text-align: center;
-      padding: 3px;
+      padding: 15px;
       border-radius: 10px;
     }
 
@@ -320,7 +328,7 @@
         document.getElementById("register").style.display = (contentId == "register" ? "block" : "none");
         document.getElementById("summercamp").style.display = "none";
       }
-      else if(contentId=="summer-camp"){
+      else if (contentId == "summer-camp") {
         document.getElementById("main").style.display = "none";
         document.getElementById("prices").style.display = "none";
         document.getElementById("schedule").style.display = "none";
@@ -388,10 +396,12 @@
     </div>
   </nav>
   <hgroup>
-    <a onclick="toggleContent('summer-camp');" href="#summer-camp"><h2>Summer Camp Registration is Open!</h2></a>
-  </hgroup>  
+    <a onclick="toggleContent('summer-camp');" href="#summer-camp">
+      <h2>Summer Camp Registration is Open!</h2>
+    </a>
+  </hgroup>
   <main class="container" id="mainContent">
-    <section id="summercamp" aria-label="Summer Camp"  style="display:none;">
+    <section id="summercamp" aria-label="Summer Camp" style="display:none;">
       <article>
         <div class="grid">
           <section>
@@ -405,7 +415,8 @@
               better than ever! </p>
             <p><strong>What’s Included?</strong></p>
             <p>This camp program, which includes <strong>Brazilian Jiu-Jitsu, Wrestling, Gymnastics,</strong> and
-              <strong>Sport-Specific Training,</strong> is designed to help your child build:</p>
+              <strong>Sport-Specific Training,</strong> is designed to help your child build:
+            </p>
             <ol>
               <li style="list-style-type: none">✔️ coordination</li>
               <li style="list-style-type: none">✔️ confidence</li>
@@ -429,28 +440,36 @@
             <table>
               <th colspan="2" style="text-align: center;">Session Breakdown</th>
               <tr>
-                <td style="text-align: center;">Session 1</td>
-                <td style="text-align: center;">Session 2</td>
+                <td style="padding: 3px; text-align: center;">Session 1</td>
+                <td style="padding: 3px; text-align: center;">Session 2</td>
               </tr>
               <tr>
-                <td style="text-align: center;">Week 1 - <healcode-widget data-version="0.2"
-                  data-link-class="healcode-pricing-option-text-link" data-site-id="103311" data-mb-site-id="5722081"
-                  data-service-id="100106" data-bw-identity-site="true" data-type="pricing-link"
-                  data-inner-html="July 7" /></td>
-                <td style="text-align: center;">Week 3 - <healcode-widget data-version="0.2"
-                  data-link-class="healcode-pricing-option-text-link" data-site-id="103311" data-mb-site-id="5722081"
-                  data-service-id="100109" data-bw-identity-site="true" data-type="pricing-link"
-                  data-inner-html="July 21" /></td>
+                <td style="text-align: center;">
+                  <healcode-widget data-version="0.2" data-link-class="healcode-pricing-option-text-link"
+                    data-site-id="103311" data-mb-site-id="5722081" data-service-id="100106"
+                    data-bw-identity-site="true" data-type="pricing-link" data-inner-html="Register for Week 1 - July 7">
+                  </healcode-widget>
+                </td>
+                <td style="text-align: center;">
+                  <healcode-widget data-version="0.2"
+                    data-link-class="healcode-pricing-option-text-link" data-site-id="103311" data-mb-site-id="5722081"
+                    data-service-id="100109" data-bw-identity-site="true" data-type="pricing-link"
+                    data-inner-html="Register for Week 3 - July 21" />
+                </td>
               </tr>
               <tr>
-                <td style="text-align: center;">Week 2 - <healcode-widget data-version="0.2"
-                  data-link-class="healcode-pricing-option-text-link" data-site-id="103311" data-mb-site-id="5722081"
-                  data-service-id="100107" data-bw-identity-site="true" data-type="pricing-link"
-                  data-inner-html="July 14" /></td>
-                <td style="text-align: center;">Week 4 - <healcode-widget data-version="0.2"
-                  data-link-class="healcode-pricing-option-text-link" data-site-id="103311" data-mb-site-id="5722081"
-                  data-service-id="100110" data-bw-identity-site="true" data-type="pricing-link"
-                  data-inner-html="July 28" /></td>
+                <td style="text-align: center;">
+                  <healcode-widget data-version="0.2"
+                    data-link-class="healcode-pricing-option-text-link" data-site-id="103311" data-mb-site-id="5722081"
+                    data-service-id="100107" data-bw-identity-site="true" data-type="pricing-link"
+                    data-inner-html="Register for Week 2 - July 14" />
+                </td>
+                <td style="text-align: center;">
+                  <healcode-widget data-version="0.2"
+                    data-link-class="healcode-pricing-option-text-link" data-site-id="103311" data-mb-site-id="5722081"
+                    data-service-id="100110" data-bw-identity-site="true" data-type="pricing-link"
+                    data-inner-html="Register for week 4 - July 28" />
+                </td>
               </tr>
             </table>
             <p>Week 2 of each session builds on skills from Week 1 while still welcoming new campers!</p>
@@ -461,17 +480,21 @@
               <li style="list-style-type: none">💲 2 Weeks – $500 <i>(Save $100)</i></li>
               <li style="list-style-type: none">💲 4 Weeks – $900 <i>(Save $300)</i></li>
             </ol>
-            ❗<strong>Early Bird Special:</strong> Free Camp t-shirt and shorts ($40 value) if you register before <strong>May
+            ❗<strong>Early Bird Special:</strong> Free Camp t-shirt and shorts ($40 value) if you register before
+            <strong>May
               31st</strong>❗
             </p>
             <p><strong>Ready to register?</strong></p>
-            <p>Sign up today to the session that works best for you. Registration closes July 4th.</p>
+            <p>Sign up today to the session that works best for you by clicking the dates above.</p>
             <p>If you would like to register for more than one week, please <a href="index.html#contact">contact us</a>,
               and we will process your registration.</p>
+            <p>Registration closes July 4th.</p>
             <p>&nbsp;</p>
-            <p>If you have any questions, please feel free to contact us at <a href="tel:647-245-8829"><i class="fas fa-phone"></i>
-              <phone>647-245-8829</phone></a> or <a href="mailto:kids@freestyledojo.ca">kids@freestyledojo.ca</a>
-              </p>
+            <p>If you have any questions, please feel free to contact us at <a href="tel:647-245-8829"><i
+                  class="fas fa-phone"></i>
+                <phone>647-245-8829</phone>
+              </a> or <a href="mailto:kids@freestyledojo.ca">kids@freestyledojo.ca</a>
+            </p>
             <p>Let's make this summer one to remember.</p>
             <p><strong>See you on the mats! 👊</strong></p>
           </section>
@@ -520,8 +543,8 @@
           <table>
             <tr>
               <td style="border-top: 2px solid #509595;">Unlimited Classes - $200 One Month Pass</td>
-              </tr> 
-              <tr>
+            </tr>
+            <tr>
               <td>Unlimited Classes - $160 Reccuring Monthly</td>
             </tr>
             <tr>
@@ -531,15 +554,17 @@
               <td>1 Weekly Class - $90 Reccuring Monthly</td>
             </tr>
             <tr>
-              <td >Drop In - $25/class</td>
+              <td>Drop In - $25/class</td>
             </tr>
             <tr>
-              <td  >Family Plan - $300/month</td>
+              <td>Family Plan - $300/month</td>
             </tr>
-            <tr><td>
-              <p style="font-size: small; text-align: center;">* Plus applicable taxes</p>
+            <tr>
+              <td>
+                <p style="font-size: small; text-align: center;">* Plus applicable taxes</p>
 
-            </td></tr>
+              </td>
+            </tr>
           </table>
           <div class="container">
             <p>At Freestyle Dojo, we keep it simple. We offer one fixed price that covers everything you
@@ -586,14 +611,14 @@
               onclick="toggleContent('book-a-class');">book a class</a>, or you can
             always simply stop by 10 minutes before a class starts to do this at the gym.<br />And also
             remember, the <strong>first class is always free.</strong></p>
-            <div class="container content-block-container"
+          <div class="container content-block-container"
             style="--content-block-card-background-color: var(--wp--preset--color--base-2);">
             <div class="row">
               <div class="col single-content-column">
                 <div class="content-block-content">
                   <p><img fetchpriority="high" decoding="async" class="aligncenter wp-image-7799 size-full"
-                      src="assets/Freestyle-Dojo-Class-Schedule.png"
-                      alt="Freestyle Dojo Full Class Schedule" width="2000" height="1160"
+                      src="assets/Freestyle-Dojo-Class-Schedule.png" alt="Freestyle Dojo Full Class Schedule"
+                      width="2000" height="1160"
                       srcset="assets/Freestyle-Dojo-Class-Schedule.png 2000w, assets/Freestyle-Dojo-Class-Schedule-300x174.png 300w, assets/Freestyle-Dojo-Class-Schedule-1024x594.png 1024w, assets/Freestyle-Dojo-Class-Schedule-768x445.png 768w, assets/Freestyle-Dojo-Class-Schedule-1536x891.png 1536w, assets/Freestyle-Dojo-Class-Schedule-1724x1000.png 1724w, assets/Freestyle-Dojo-Class-Schedule-1293x750.png 1293w, assets/Freestyle-Dojo-Class-Schedule-603x350.png 603w"
                       sizes="(max-width: 2000px) 100vw, 2000px" /></p>
                 </div>
@@ -691,7 +716,7 @@
               <input type="text" name="name" placeholder="Full Name" required />
               <input type="email" name="email" placeholder="Email Address" required />
               <input type="tel" name="phone" placeholder="Phone Number" required />
-              <select name="referral"  value="">
+              <select name="referral" value="">
                 <option value="">Where did you hear about us?</option>
                 <option value="friends_and_family">Friends and Family</option>
                 <option value="flyer">Flyer</option>
@@ -802,7 +827,8 @@
             style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
             <a href="https://www.instagram.com/p/C3FhuQMu2ZU/?utm_source=ig_embed&amp;utm_campaign=loading"
               style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-              target="_blank">A post shared by Freestyle Dojo (@freestyledojo)</a></p>
+              target="_blank">A post shared by Freestyle Dojo (@freestyledojo)</a>
+          </p>
         </div>
       </blockquote>
       <script async src="//www.instagram.com/embed.js"></script>
